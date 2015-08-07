@@ -32,6 +32,9 @@
     [productionNotebook finishPackaging]; // Окончание упаковки
     [self finishFactory]; //Встроенный метод, выводящий благодарность за посещение
     
+    
+    
+    
     return YES;
 }
 
