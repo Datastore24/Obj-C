@@ -10,12 +10,14 @@
 
 @interface NotebookFactory : NSObject
 
-- (void) startFactory;
-- (void) finishFactory;
-- (void) startAssembly;
-- (void) finishAssembly;
-- (void) startPackaging;
-- (void) finishPackaging;
+//Объявление методов доступных пользователю (программисту)
+
+- (void) startFactory; // Начало метода производства
+- (void) finishFactory; // Конец метода производства, вывод статуса
+- (void) startAssembly; // Начало метода сборки
+- (void) finishAssembly; // Конец метода сборки, вывод статуса
+- (void) startPackaging; // Начало метода упаковки
+- (void) finishPackaging; // Конец метода упаковки, вывод статуса
 
 
 

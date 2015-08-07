@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+
+//Импортирование класса изготовления ноутбука
 #import "NotebookFactory.h"
 
 @interface AppDelegate ()
@@ -19,18 +21,21 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    //Создание указателя на экземпляр класса NotebookFactory, выделение памяти и инициализация
     NotebookFactory * productionNotebook = [[NotebookFactory alloc] init];
     
-    [productionNotebook startFactory];
-    [productionNotebook finishFactory];
-    [productionNotebook startAssembly];
-    [productionNotebook finishAssembly];
-    [productionNotebook startPackaging];
-    [productionNotebook finishPackaging];
-    [self finishFactory];
+    [productionNotebook startFactory]; // Запуск изготовления
+    [productionNotebook finishFactory]; // Окончание изготовления
+    [productionNotebook startAssembly]; // Запуск сборки
+    [productionNotebook finishAssembly]; // Окончание сборки
+    [productionNotebook startPackaging]; // Запуск упаковки
+    [productionNotebook finishPackaging]; // Окончание упаковки
+    [self finishFactory]; //Встроенный метод, выводящий благодарность за посещение
     
     return YES;
 }
+
+//Встроенный метод, вывода благодарности за посещение
 
 - (void) finishFactory {
     NSLog(@"Спасибо что посетили наш завод! Удачи Вам и успехов.");
