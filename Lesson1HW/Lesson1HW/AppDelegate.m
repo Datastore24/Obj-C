@@ -30,7 +30,10 @@
     [productionNotebook finishAssembly]; // Окончание сборки
     [productionNotebook startPackaging]; // Запуск упаковки
     [productionNotebook finishPackaging]; // Окончание упаковки
-    [self finishFactory]; //Встроенный метод, выводящий благодарность за посещение  
+    [self finishFactory]; //Встроенный метод, выводящий благодарность за посещение
+    
+    
+    
     
     return YES;
 }
