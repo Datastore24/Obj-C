@@ -18,7 +18,7 @@
 - (void) finishAssembly; // Конец метода сборки, вывод статуса
 - (void) startPackaging; // Начало метода упаковки
 - (void) finishPackaging; // Конец метода упаковки, вывод статуса
-
+- (NSInteger) countNotebook; //Рандомная функция вывода количества ноутбуков
 
 
 @end
