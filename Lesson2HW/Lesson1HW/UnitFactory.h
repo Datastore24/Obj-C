@@ -10,8 +10,14 @@
 
 @interface UnitFactory : NotebookFactory
 
--(void) operationSystem: (NSString *) os;
--(NSString *) installOS;
+- (void) operationSystem: (NSString *) os;
+- (NSString *) installOS;
+- (NSString *) randomStringWithLength: (int) len;
+- (void) notebookOwner: (NSString *) name phoneNumber: (NSString *) phoneNumber countUser: (NSInteger) countUser;
 + (void) unit;
+
+
+@property (strong,nonatomic) NSString* sn;
+@property (assign,nonatomic) NSString* model;
 
 @end

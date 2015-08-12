@@ -39,6 +39,8 @@
     
     [UnitFactory unit]; //Обращение к методу класса
     
+    NSString * snRand = [productionNotebook randomStringWithLength:10]; //Ранндомный генератор серийного номера
+    
     [productionNotebook startFactory]; // Запуск изготовления
     [productionNotebook finishFactory]; // Окончание изготовления
     [productionNotebook startAssembly]; // Запуск сборки
@@ -47,6 +49,12 @@
     [productionNotebook finishPackaging]; // Окончание упаковки
     [productionNotebook operationSystem:@"Windows 7"];
     [productionNotebook installOS]; //Установка операционной системы
+    [productionNotebook setSn:snRand]; //Сеттер для параметра SN
+    [productionNotebook setModel:@"AQ_v1.0"]; //Сеттер для параметра Model
+    NSLog(@"Ноутбуку был установлен SN: %@", productionNotebook.sn);
+    NSLog(@"Модель ноутбука: %@", productionNotebook.model);
+    [productionNotebook notebookOwner:@"Ковыршин Кирилл" phoneNumber:@"+7 909 9 888 77 1" countUser:4];
+
     
     [self finishFactory]; //Встроенный метод, выводящий благодарность за посещениеv
     
