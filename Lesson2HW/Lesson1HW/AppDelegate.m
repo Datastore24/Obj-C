@@ -55,11 +55,11 @@
     long int countNotebook = [productionNotebook countNotebook];
     NSLog(@"Было произведено: %li шт.",countNotebook);
     for (int i=0; countNotebook>i; i++) {
-        
+        NSString * snOs = [productionNotebook randomSnOs];
         NSString * snRand = [productionNotebook randomStringWithLength:10]; //Ранндомный генератор серийного номера
-        
+        NSLog(@"Серийный номер Windows: %@",snOs);
         [productionNotebook setSn:snRand]; //Сеттер для параметра SN
-        [productionNotebook setModel:@"AQ_v1.0"]; //Сеттер для параметра Model
+        [productionNotebook setModel:[self randVersion:i]]; //Сеттер для параметра Model
         
         NSLog(@"Ноутбуку был установлен SN: %@", productionNotebook.sn);
         NSLog(@"Модель ноутбука: %@", productionNotebook.model);
@@ -75,6 +75,13 @@
 }
 
 //Встроенный метод, вывода благодарности за посещение
+
+- (NSString *) randVersion: (int) version{
+    
+    NSString* a = [NSString stringWithFormat:@"V.%i.0",version];
+    
+    return a;
+}
 
 - (void) finishFactory {
     NSLog(@"Спасибо что посетили наш завод! Удачи Вам и успехов.\n ");

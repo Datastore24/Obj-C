@@ -13,7 +13,9 @@
 - (void) operationSystem: (NSString *) os;
 - (NSString *) installOS;
 - (NSString *) randomStringWithLength: (int) len;
+- (NSString *) randomSnOs;
 - (void) notebookOwner: (NSString *) name phoneNumber: (NSString *) phoneNumber countUser: (NSInteger) countUser;
+
 + (void) unit;
 
 

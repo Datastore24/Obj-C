@@ -17,18 +17,50 @@
     NSLog(@"Вы обратились к дочернему подразделению. \n Будет произведена установка операционной системы и VIP упаковка.\n ");
 }
 
-//Рандомное значение
-NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+//Рандомное значение серийного номера ноутбука
 
 - (NSString *) randomStringWithLength: (int) len {
     
-    NSMutableString *randomString = [NSMutableString stringWithCapacity: len];
+   NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"; //строка для рандома
     
-    for (int i=0; i<len; i++) {
-        [randomString appendFormat: @"%C", [letters characterAtIndex: arc4random_uniform([letters length])]];
+    NSMutableString *string = [NSMutableString stringWithCapacity: len]; //Строка длинной len
+    
+    for (NSUInteger i = 0; i < len; i++) {
+        
+        u_int32_t charIndex = arc4random() % [letters length]; //выбираем рандомный индекс буквы тип unsigned int
+        
+        unichar alpha = [letters characterAtIndex:charIndex]; // выбираем букву по индексу тип unsigned short
+        
+        [string appendFormat:@"%C", alpha]; //приводим в 16-битный Unicode символ формат и добавлени буквы или цифры в конец
+    }
+ 
+   return string;
+}
+
+//Рандомное значение серийного номера OS
+
+- (NSString *) randomSnOs{
+    
+    NSString *letters = @"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"; //строка для рандома
+    
+    NSMutableString *string = [NSMutableString stringWithCapacity: 19]; //Строка длинной len
+    
+    for (NSUInteger i = 0; i < 4; i++) {
+        
+        for (NSUInteger i = 0; i < 4; i++) {
+        u_int32_t charIndex = arc4random() % [letters length]; //выбираем рандомный индекс буквы тип unsigned int
+        
+        unichar alpha = [letters characterAtIndex:charIndex]; // выбираем букву по индексу тип unsigned short
+        
+        [string appendFormat:@"%C", alpha]; //приводим в 16-битный Unicode символ формат и добавлени буквы или цифры в конец
+        }
+        //Добавление дефиса всем элементам, кроме последнего
+        if(i!=3){
+            [string appendFormat:@"-"]; //Добавляем дефис
+        }
     }
     
-    return randomString;
+    return string;
 }
 
 // Выбор операционной системы
