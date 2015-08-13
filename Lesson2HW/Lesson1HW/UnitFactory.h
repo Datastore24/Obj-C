@@ -20,6 +20,7 @@
 
 
 @property (strong,nonatomic) NSString* sn;
+@property (strong,nonatomic) NSString* snOs;
 @property (assign,nonatomic) NSString* model;
 
 @end

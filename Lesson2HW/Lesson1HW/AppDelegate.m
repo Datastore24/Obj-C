@@ -22,24 +22,10 @@
     // Override point for customization after application launch.
     
     //Создание указателя на экземпляр класса NotebookFactory, выделение памяти и инициализаци
-    NotebookFactory * VIPproductionNotebook = [[NotebookFactory alloc] init];
+    NotebookFactory * productionNotebook = [[NotebookFactory alloc] init];
     
     //Создание указателя на экземпляр дочернего класса UnitFactory, выделение памяти и инициализаци
-    UnitFactory * productionNotebook = [[UnitFactory alloc] init];
-    
-    [VIPproductionNotebook startFactory]; // Запуск изготовления
-    [VIPproductionNotebook finishFactory]; // Окончание изготовления
-    [VIPproductionNotebook startAssembly]; // Запуск сборки
-    [VIPproductionNotebook finishAssembly]; // Окончание сборки
-    [VIPproductionNotebook startPackaging]; // Запуск упаковки
-    [VIPproductionNotebook finishPackaging]; // Окончание упаковки
-    [productionNotebook operationSystem:@"Windows 7"];
-    [productionNotebook installOS]; //Установка операционной системы
-
-    
-    [UnitFactory unit]; //Обращение к методу класса
-    
-   
+    UnitFactory * vipProductionNotebook = [[UnitFactory alloc] init];
     
     [productionNotebook startFactory]; // Запуск изготовления
     [productionNotebook finishFactory]; // Окончание изготовления
@@ -47,27 +33,42 @@
     [productionNotebook finishAssembly]; // Окончание сборки
     [productionNotebook startPackaging]; // Запуск упаковки
     [productionNotebook finishPackaging]; // Окончание упаковки
-    [productionNotebook operationSystem:@"Windows 7"];
-    [productionNotebook installOS]; //Установка операционной системы
+    [vipProductionNotebook operationSystem:@"Windows 7"];
+    [vipProductionNotebook installOS]; //Установка операционной системы
+    
+    [UnitFactory unit]; //Обращение к методу класса
+    
+    [vipProductionNotebook startFactory]; // Запуск изготовления
+    [vipProductionNotebook finishFactory]; // Окончание изготовления
+    [vipProductionNotebook startAssembly]; // Запуск сборки
+    [vipProductionNotebook finishAssembly]; // Окончание сборки
+    [vipProductionNotebook startPackaging]; // Запуск упаковки
+    [vipProductionNotebook finishPackaging]; // Окончание упаковки
+    [vipProductionNotebook operationSystem:@"Windows 7"];
+    [vipProductionNotebook installOS]; //Установка операционной системы
     
     
     //Цикл присвоения SN и Модели каждому из произведенных ноутбуков на основании функции рандомной генерации число от 0 до 99
-    long int countNotebook = [productionNotebook countNotebook];
+    long int countNotebook = [vipProductionNotebook countNotebook];
     NSLog(@"Было произведено: %li шт.",countNotebook);
     for (int i=0; countNotebook>i; i++) {
-        NSString * snOs = [productionNotebook randomSnOs];
-        NSString * snRand = [productionNotebook randomStringWithLength:10]; //Ранндомный генератор серийного номера
-        NSLog(@"Серийный номер Windows: %@",snOs);
-        [productionNotebook setSn:snRand]; //Сеттер для параметра SN
-        [productionNotebook setModel:[self randVersion:i]]; //Сеттер для параметра Model
+        NSString * snOs = [vipProductionNotebook randomSnOs];
+        NSString * snRand = [vipProductionNotebook randomStringWithLength:10]; //Ранндомный генератор серийного номера
+        NSString * alphaVersion = [vipProductionNotebook randomStringWithLength:4]; //Ранндомный генератор модели
+        int sVersion = arc4random() % countNotebook;
         
-        NSLog(@"Ноутбуку был установлен SN: %@", productionNotebook.sn);
-        NSLog(@"Модель ноутбука: %@", productionNotebook.model);
+        [vipProductionNotebook setSn:snRand]; //Сеттер для параметра sn        
+        [vipProductionNotebook setModel:[self randVersion:i+1 subVersion:sVersion alphaVersion:alphaVersion]]; //Сеттер для параметра Model
+        [vipProductionNotebook setSnOs:snOs]; //Сеттер для параметра snOs
+        
+        NSLog(@"Серийный номер Windows: %@",vipProductionNotebook.snOs); //геттер для snOs
+        NSLog(@"Ноутбуку был установлен SN: %@", vipProductionNotebook.sn); //геттер для sn
+        NSLog(@"Модель ноутбука: %@\n\n", vipProductionNotebook.model); //геттер для model
         
     }
     //
     
-    [productionNotebook notebookOwner:@"Ковыршин Кирилл" phoneNumber:@"+7 909 9 888 77 1" countUser:4];
+    [vipProductionNotebook notebookOwner:@"Ковыршин Кирилл" phoneNumber:@"+7 909 9 888 77 1" countUser:4];
     [self finishFactory]; //Встроенный метод, выводящий благодарность за посещениеv
     
     
@@ -76,9 +77,9 @@
 
 //Встроенный метод, вывода благодарности за посещение
 
-- (NSString *) randVersion: (int) version{
+- (NSString *) randVersion: (int) version subVersion: (int) subVersion alphaVersion: (NSString*) alphaVersion{
     
-    NSString* a = [NSString stringWithFormat:@"V.%i.0",version];
+    NSString* a = [NSString stringWithFormat:@"%@ v.%i.%i",alphaVersion,version,subVersion];
     
     return a;
 }
