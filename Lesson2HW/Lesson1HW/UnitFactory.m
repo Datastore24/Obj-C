@@ -65,8 +65,27 @@
 
 // Выбор операционной системы
 
-- (void) operationSystem: (NSString *) os {
-    NSLog(@"Установка операционной системы:%@ \n ",os);
+- (void) operationSystem: (int) os {
+    
+    switch (os){
+        case 0:
+            NSLog(@"Выбрана операционная система: Windows");
+            break;
+        case 1:
+            NSLog(@"Выбрана операционная система: Linux");
+            break;
+            
+        case 2:
+            NSLog(@"Выбрана операционная система: Gentoo");
+            break;
+            
+        default:
+            NSLog(@"Выбрана операционная система: FreeDOS");
+            break;
+            
+    }
+    
+    
 }
 
 // Установка операционной системы

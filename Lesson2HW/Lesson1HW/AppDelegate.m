@@ -33,8 +33,6 @@
     [productionNotebook finishAssembly]; // Окончание сборки
     [productionNotebook startPackaging]; // Запуск упаковки
     [productionNotebook finishPackaging]; // Окончание упаковки
-    [vipProductionNotebook operationSystem:@"Windows 7"];
-    [vipProductionNotebook installOS]; //Установка операционной системы
     
     [UnitFactory unit]; //Обращение к методу класса
     
@@ -44,14 +42,20 @@
     [vipProductionNotebook finishAssembly]; // Окончание сборки
     [vipProductionNotebook startPackaging]; // Запуск упаковки
     [vipProductionNotebook finishPackaging]; // Окончание упаковки
-    [vipProductionNotebook operationSystem:@"Windows 7"];
-    [vipProductionNotebook installOS]; //Установка операционной системы
+    
     
     
     //Цикл присвоения SN и Модели каждому из произведенных ноутбуков на основании функции рандомной генерации число от 0 до 99
     long int countNotebook = [vipProductionNotebook countNotebook];
     NSLog(@"Было произведено: %li шт.",countNotebook);
+    
     for (int i=0; countNotebook>i; i++) {
+        
+        int randOs = arc4random()%3;//рандомный вывод операционной системы
+        [vipProductionNotebook operationSystem:randOs]; // вывод выбранной операционной системы
+        
+        [vipProductionNotebook installOS]; //Установка операционной системы
+        
         NSString * snOs = [vipProductionNotebook randomSnOs];
         NSString * snRand = [vipProductionNotebook randomStringWithLength:10]; //Ранндомный генератор серийного номера
         NSString * alphaVersion = [vipProductionNotebook randomStringWithLength:4]; //Ранндомный генератор модели

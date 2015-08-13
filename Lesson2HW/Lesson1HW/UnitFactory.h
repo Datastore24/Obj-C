@@ -10,7 +10,7 @@
 
 @interface UnitFactory : NotebookFactory
 
-- (void) operationSystem: (NSString *) os;
+- (void) operationSystem: (int) os;
 - (NSString *) installOS;
 - (NSString *) randomStringWithLength: (int) len;
 - (NSString *) randomSnOs;
