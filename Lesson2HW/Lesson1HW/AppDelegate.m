@@ -75,7 +75,7 @@
     return YES;
 }
 
-//Встроенный метод, вывода благодарности за посещение
+//Встроенный метод, генерация модели ноутбука
 
 - (NSString *) randVersion: (int) version subVersion: (int) subVersion alphaVersion: (NSString*) alphaVersion{
     
@@ -83,6 +83,8 @@
     
     return a;
 }
+
+//Встроенный метод, вывода благодарности за посещение
 
 - (void) finishFactory {
     NSLog(@"Спасибо что посетили наш завод! Удачи Вам и успехов.\n ");
