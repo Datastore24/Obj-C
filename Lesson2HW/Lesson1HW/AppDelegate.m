@@ -47,7 +47,7 @@
     
     //Цикл присвоения SN и Модели каждому из произведенных ноутбуков на основании функции рандомной генерации число от 0 до 99
     long int countNotebook = [vipProductionNotebook countNotebook];
-    NSLog(@"Было произведено: %li шт.",countNotebook);
+    
     
     for (int i=0; countNotebook>i; i++) {
         
@@ -74,6 +74,7 @@
     
     [vipProductionNotebook notebookOwner:@"Ковыршин Кирилл" phoneNumber:@"+7 909 9 888 77 1" countUser:4];
     [self finishFactory]; //Встроенный метод, выводящий благодарность за посещениеv
+    
     
     
     return YES;

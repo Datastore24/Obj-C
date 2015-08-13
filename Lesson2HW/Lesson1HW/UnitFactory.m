@@ -72,7 +72,7 @@
             NSLog(@"Выбрана операционная система: Windows");
             break;
         case 1:
-            NSLog(@"Выбрана операционная система: Linux");
+            NSLog(@"Выбрана операционная система: Ubuntu");
             break;
             
         case 2:
@@ -80,7 +80,7 @@
             break;
             
         default:
-            NSLog(@"Выбрана операционная система: FreeDOS");
+            NSLog(@"Выбрана операционная система: MacOS");
             break;
             
     }
