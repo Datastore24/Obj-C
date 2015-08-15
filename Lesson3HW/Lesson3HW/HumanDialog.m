@@ -54,7 +54,9 @@
     
 }
 
+//Вспомогательные методы вывода и приведение типов
 
+//Имя
 - (void) sayName: (NSString*) name{
     
     NSLog(@"Назовите Ваша имя?\n");
@@ -62,6 +64,7 @@
     
 }
 
+//Пол
 -(void) saySex: (NSString *) sex{
 
     NSLog(@"Ваш пол?\n");
@@ -69,6 +72,7 @@
     
 }
 
+//Возраст
 -(void) sayAge: (NSInteger) age{
     [self integerToObject:age];
     
@@ -77,6 +81,7 @@
     
 }
 
+//Рост
 -(void) sayHeight: (CGFloat) height{
     [self floatToObject:height];
     NSLog(@"Ваш рост?\n");
@@ -84,6 +89,7 @@
     
 }
 
+//Вес
 -(void) sayWeight: (CGFloat) weight{
     [self floatToObject:weight];
     NSLog(@"Ваш вес?\n");
@@ -91,6 +97,7 @@
     
 }
 
+//Метод с двумя условиями
 -(void) sayMaritalStatus: (NSInteger) maritalStatus sex:(NSString *) sex{
     [self integerToObject:maritalStatus];
     NSLog(@"Ваш семейный статус?\n");
@@ -115,6 +122,7 @@
     
 }
 
+//Языки программирования
 -(void) sayProgrammingLaguage: (NSString *) programmingLaguage{
     
     NSLog(@"Язык программирования?\n");

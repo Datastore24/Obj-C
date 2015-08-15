@@ -26,7 +26,7 @@
   
     HumanDialog * human = [[HumanDialog alloc] init]; // Создание объекта
     
-    [human sayHello];
+    [human sayHello]; //  Приветствие
     
     //Переменные
     NSString * name = @"Кирилл";
@@ -40,7 +40,7 @@
     //Вызов основного метода
     [human startDialog:name sex:sex age:age height:height weight:weight maritalStatus:marital programmingLaguage:programmingLaguage];
     
-    NSLog(@"\n\n----------\n\n");
+    NSLog(@"\n\n----------\n\n"); //Разделитель
     
     //Переменные
     NSString * nameHuman = @"Ольга";
@@ -55,14 +55,14 @@
     [human startDialog:nameHuman sex:sexHuman age:ageHuman height:heightHuman weight:weightHuman maritalStatus:maritalHuman programmingLaguage:programmingLaguageHuman];
     
     //Методы вызываемые селектором
-    [human performSelector:@selector(studyData) withObject:nil afterDelay:3];
-    [human performSelector:@selector(separator) withObject:nil afterDelay:5];
-    [human performSelector:@selector(separator) withObject:nil afterDelay:7];
-    [human performSelector:@selector(separator) withObject:nil afterDelay:9];
-    [human performSelector:@selector(studyDataFinish) withObject:nil afterDelay:11];
-    [human performSelector:@selector(addToDatabase) withObject:nil afterDelay:12];
+    [human performSelector:@selector(studyData) withObject:nil afterDelay:3]; //Вывод на 3 секунде
+    [human performSelector:@selector(separator) withObject:nil afterDelay:5]; //Еще через 2 секунды
+    [human performSelector:@selector(separator) withObject:nil afterDelay:7]; //Еще через 2 секунды
+    [human performSelector:@selector(separator) withObject:nil afterDelay:9]; //Еще через 2 секунды
+    [human performSelector:@selector(studyDataFinish) withObject:nil afterDelay:11]; //Еще через 3 секунды
+    [human performSelector:@selector(addToDatabase) withObject:nil afterDelay:12]; //Еще через 1 секунду
     
-    NSLog(@"Спасибо за пройденный опрос");
+    NSLog(@"Спасибо за пройденный опрос");//Прощаемся
     
     
     
