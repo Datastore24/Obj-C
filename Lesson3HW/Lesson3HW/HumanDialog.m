@@ -19,8 +19,8 @@
 //Метод помещения целого числа в объект и обратное действие - приведение к примитивному типу
 
 -(NSInteger) integerToObject: (NSInteger) integer {
+    
     NSString * objectString = [NSString stringWithFormat:@"%li",integer];
-   
     NSInteger nonObjectInteger = [objectString integerValue];
     
     return nonObjectInteger;
@@ -29,8 +29,10 @@
 //Метод помещения числа с плавающей точкой в объект и обратное действие - приведение к примитивному типу
 
 -(CGFloat) floatToObject: (CGFloat) cgfloat {
-    NSString * objectString = [NSString stringWithFormat:@"%f",cgfloat];
-    CGFloat nonObjectFloat = [objectString floatValue];
+    
+    NSNumber * ObjectFloat = [NSNumber numberWithFloat:cgfloat];
+    CGFloat nonObjectFloat = [ObjectFloat floatValue];
+    
     return nonObjectFloat;
 }
 
