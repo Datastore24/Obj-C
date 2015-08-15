@@ -4,9 +4,14 @@
 //
 //  Created by Кирилл Ковыршин on 15.08.15.
 //  Copyright (c) 2015 datastore24. All rights reserved.
+//  Домашняя работа к уроку 3
+//  Реализую диалог к человеком через класс HumanDialog с использованием селекторов и передачей различных
+//  типов данных
+//
 //
 
 #import "AppDelegate.h"
+#import "HumanDialog.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +22,50 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+  
+    HumanDialog * human = [[HumanDialog alloc] init]; // Создание объекта
+    
+    [human sayHello];
+    
+    //Переменные
+    NSString * name = @"Кирилл";
+    NSInteger age = 28;
+    NSString * sex = @"Мужской";
+    CGFloat height = 183.45f;
+    CGFloat weight = 99.25f;
+    NSInteger marital = 1; //0 или 1
+    NSString * programmingLaguage = @"Objective-C";
+    
+    //Вызов основного метода
+    [human startDialog:name sex:sex age:age height:height weight:weight maritalStatus:marital programmingLaguage:programmingLaguage];
+    
+    NSLog(@"\n\n----------\n\n");
+    
+    //Переменные
+    NSString * nameHuman = @"Ольга";
+    NSInteger ageHuman = 27;
+    NSString * sexHuman = @"Женский";
+    CGFloat heightHuman = 174.0f;
+    CGFloat weightHuman = 53.51f;
+    NSInteger maritalHuman = 1; //0 или 1
+    NSString * programmingLaguageHuman = @"Не программирую";
+    
+    //Вызов основного метода
+    [human startDialog:nameHuman sex:sexHuman age:ageHuman height:heightHuman weight:weightHuman maritalStatus:maritalHuman programmingLaguage:programmingLaguageHuman];
+    
+    //Методы вызываемые селектором
+    [human performSelector:@selector(studyData) withObject:nil afterDelay:3];
+    [human performSelector:@selector(separator) withObject:nil afterDelay:5];
+    [human performSelector:@selector(separator) withObject:nil afterDelay:7];
+    [human performSelector:@selector(separator) withObject:nil afterDelay:9];
+    [human performSelector:@selector(studyDataFinish) withObject:nil afterDelay:11];
+    [human performSelector:@selector(addToDatabase) withObject:nil afterDelay:12];
+    
+    NSLog(@"Спасибо за пройденный опрос");
+    
+    
+    
     return YES;
 }
 

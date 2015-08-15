@@ -14,6 +14,8 @@
 		AD22F55E1B7EDA570097994A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD22F55D1B7EDA570097994A /* Images.xcassets */; };
 		AD22F5611B7EDA570097994A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD22F55F1B7EDA570097994A /* LaunchScreen.xib */; };
 		AD22F56D1B7EDA580097994A /* Lesson3HWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD22F56C1B7EDA580097994A /* Lesson3HWTests.m */; };
+		AD22F57B1B7EDCA10097994A /* HumanDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = AD22F57A1B7EDCA10097994A /* HumanDialog.m */; };
+		AD22F57D1B7EDE900097994A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD22F57C1B7EDE900097994A /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		AD22F5661B7EDA580097994A /* Lesson3HWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson3HWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD22F56B1B7EDA580097994A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD22F56C1B7EDA580097994A /* Lesson3HWTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lesson3HWTests.m; sourceTree = "<group>"; };
+		AD22F5791B7EDCA10097994A /* HumanDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HumanDialog.h; sourceTree = "<group>"; };
+		AD22F57A1B7EDCA10097994A /* HumanDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HumanDialog.m; sourceTree = "<group>"; };
+		AD22F57C1B7EDE900097994A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD22F57D1B7EDE900097994A /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,7 @@
 		AD22F5441B7EDA570097994A = {
 			isa = PBXGroup;
 			children = (
+				AD22F57C1B7EDE900097994A /* CoreGraphics.framework */,
 				AD22F54F1B7EDA570097994A /* Lesson3HW */,
 				AD22F5691B7EDA580097994A /* Lesson3HWTests */,
 				AD22F54E1B7EDA570097994A /* Products */,
@@ -83,6 +90,8 @@
 			children = (
 				AD22F5541B7EDA570097994A /* AppDelegate.h */,
 				AD22F5551B7EDA570097994A /* AppDelegate.m */,
+				AD22F5791B7EDCA10097994A /* HumanDialog.h */,
+				AD22F57A1B7EDCA10097994A /* HumanDialog.m */,
 				AD22F5571B7EDA570097994A /* ViewController.h */,
 				AD22F5581B7EDA570097994A /* ViewController.m */,
 				AD22F55A1B7EDA570097994A /* Main.storyboard */,
@@ -220,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD22F5591B7EDA570097994A /* ViewController.m in Sources */,
+				AD22F57B1B7EDCA10097994A /* HumanDialog.m in Sources */,
 				AD22F5561B7EDA570097994A /* AppDelegate.m in Sources */,
 				AD22F5531B7EDA570097994A /* main.m in Sources */,
 			);

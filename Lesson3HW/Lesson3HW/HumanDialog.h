@@ -7,7 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 @interface HumanDialog : NSObject
+
+//Объявление методов
+
+-(void) sayHello;
+
+-(void) startDialog: (NSString *) name
+                sex: (NSString*)sex
+                age: (NSInteger) age
+             height: (CGFloat) height
+             weight: (CGFloat) weight
+      maritalStatus: (NSInteger) maritalStatus
+ programmingLaguage: (NSString *) programmingLaguage;
+
+-(void) studyData;
+-(void) separator;
+-(void) studyDataFinish;
+-(void) addToDatabase;
+
 
 @end
