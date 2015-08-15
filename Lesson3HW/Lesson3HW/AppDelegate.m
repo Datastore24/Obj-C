@@ -55,19 +55,37 @@
     [human startDialog:nameHuman sex:sexHuman age:ageHuman height:heightHuman weight:weightHuman maritalStatus:maritalHuman programmingLaguage:programmingLaguageHuman];
     
     //Методы вызываемые селектором
-    [human performSelector:@selector(studyData) withObject:nil afterDelay:3]; //Вывод на 3 секунде
-    [human performSelector:@selector(separator) withObject:nil afterDelay:5]; //Еще через 2 секунды
-    [human performSelector:@selector(separator) withObject:nil afterDelay:7]; //Еще через 2 секунды
-    [human performSelector:@selector(separator) withObject:nil afterDelay:9]; //Еще через 2 секунды
+    [human performSelector:@selector(studyData) withObject:@"..." afterDelay:3]; //Вывод на 3 секунде
+    [human performSelector:@selector(separator:) withObject:@"..." afterDelay:5]; //Еще через 2 секунды
+    [human performSelector:@selector(separator:) withObject:@"..." afterDelay:7]; //Еще через 2 секунды
+    [human performSelector:@selector(separator:) withObject:@"..." afterDelay:9]; //Еще через 2 секунды
     [human performSelector:@selector(studyDataFinish) withObject:nil afterDelay:11]; //Еще через 3 секунды
     [human performSelector:@selector(addToDatabase) withObject:nil afterDelay:12]; //Еще через 1 секунду
     
-    NSLog(@"Спасибо за пройденный опрос");//Прощаемся
+    NSLog(@"Спасибо за пройденный опрос\n\n");//Прощаемся
     
+    //Работа с массивом
+    NSNumber * objAge = [NSNumber numberWithInteger:age];
+    NSNumber * objHeight = [NSNumber numberWithFloat:height];
+    NSNumber * objWeight = [NSNumber numberWithFloat:weight];
+    NSNumber * objMarital = [NSNumber numberWithInteger:marital];
     
+    NSDictionary * humanDictionary = @{@"dictName":name,
+                                       @"dictAge":objAge,
+                                       @"dictSex":sex,
+                                       @"dictHeight":objHeight,
+                                       @"dictWeight":objWeight,
+                                       @"dictMarital":objMarital,
+                                       @"dictProgrammingLanguage":programmingLaguageHuman};
+    
+    [human performSelector:@selector(separator:) withObject:@"************************" afterDelay:13];
+    [human performSelector:@selector(starDialogDictionary:) withObject:humanDictionary afterDelay:14];
+    [human performSelector:@selector(separator:) withObject:@"************************" afterDelay:15];
     
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

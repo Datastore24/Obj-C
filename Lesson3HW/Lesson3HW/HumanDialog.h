@@ -23,8 +23,10 @@
       maritalStatus: (NSInteger) maritalStatus
  programmingLaguage: (NSString *) programmingLaguage;
 
+-(void) starDialogDictionary: (NSDictionary *) dictionary;
+
 -(void) studyData;
--(void) separator;
+-(void) separator: (NSString *) separator;
 -(void) studyDataFinish;
 -(void) addToDatabase;
 

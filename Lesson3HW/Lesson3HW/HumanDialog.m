@@ -36,7 +36,7 @@
     return nonObjectFloat;
 }
 
-//Метод устанавливающий property и работа с массивом
+//Основной метод для вывода процесса изучения человека
 
 -(void) startDialog: (NSString *) name
                 sex: (NSString*)sex
@@ -56,7 +56,37 @@
     
 }
 
-//Вспомогательные методы вывода и приведение типов
+//Метод для работы с массивом
+
+-(void) starDialogDictionary: (NSDictionary *) dictionary{
+    
+    //Обработка массива
+    
+    NSInteger intAge = [[dictionary objectForKey:@"dictAge"] integerValue];
+
+    CGFloat floatHeight = [[dictionary objectForKey:@"dictHeight"] floatValue];
+    
+    CGFloat floatWeight = [[dictionary objectForKey:@"dictWeight"] floatValue];
+    
+    NSInteger intMarital = [[dictionary objectForKey:@"dictMarital"] integerValue];
+    
+    //
+    
+    NSLog(@"Обработка массива данных");
+ 
+    [self performSelector:@selector(separator:) withObject:@"************************"]; //разделитель
+    
+    [self sayName:[dictionary objectForKey:@"dictName"]];
+    [self saySex:[dictionary objectForKey:@"dictSex"]];
+    [self sayAge:intAge];
+    [self sayHeight:floatHeight];
+    [self sayWeight:floatWeight];
+    [self sayMaritalStatus:intMarital sex:[dictionary objectForKey:@"dictSex"]];
+    [self sayProgrammingLaguage:[dictionary objectForKey:@"dictProgrammingLanguage"]];
+    
+    
+    
+}
 
 //Имя
 - (void) sayName: (NSString*) name{
@@ -137,8 +167,9 @@
     NSLog(@"Изучение данных");
 }
 
--(void) separator{
-    NSLog(@"...");
+//Разделитель
+-(void) separator: (NSString *) separator{
+    NSLog(@"%@",separator);
 }
 
 -(void) studyDataFinish{
