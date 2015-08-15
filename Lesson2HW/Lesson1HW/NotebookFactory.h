@@ -10,6 +10,7 @@
 
 @interface NotebookFactory : NSObject
 
+
 //Объявление методов доступных пользователю (программисту)
 
 - (void) startFactory; // Начало метода производства
@@ -19,6 +20,7 @@
 - (void) startPackaging; // Начало метода упаковки
 - (void) finishPackaging; // Конец метода упаковки, вывод статуса
 - (NSInteger) countNotebook; //Рандомная функция вывода количества ноутбуков
+
 
 
 @end

@@ -10,6 +10,10 @@
 
 @implementation NotebookFactory
 
+int a;
+int b;
+
+
 //Методы для вывода процесса изготовления
 
 - (void) startFactory {
