@@ -16,7 +16,7 @@
 }
 
 
-//Метод помещения целого числа в объект
+//Метод помещения целого числа в объект и обратное действие - приведение к примитивному типу
 
 -(NSInteger) integerToObject: (NSInteger) integer {
     NSString * objectString = [NSString stringWithFormat:@"%li",integer];
@@ -26,7 +26,7 @@
     return nonObjectInteger;
 }
 
-//Метод помещения числа с плавающей точкой в объект
+//Метод помещения числа с плавающей точкой в объект и обратное действие - приведение к примитивному типу
 
 -(CGFloat) floatToObject: (CGFloat) cgfloat {
     NSString * objectString = [NSString stringWithFormat:@"%f",cgfloat];
