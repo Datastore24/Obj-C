@@ -20,8 +20,8 @@
 
 -(NSInteger) integerToObject: (NSInteger) integer {
     
-    NSString * objectString = [NSString stringWithFormat:@"%li",integer];
-    NSInteger nonObjectInteger = [objectString integerValue];
+    NSString * objectString = [NSString stringWithFormat:@"%li",integer]; // число в объект
+    NSInteger nonObjectInteger = [objectString integerValue]; //обратно в примитив
     
     return nonObjectInteger;
 }
@@ -30,8 +30,8 @@
 
 -(CGFloat) floatToObject: (CGFloat) cgfloat {
     
-    NSNumber * ObjectFloat = [NSNumber numberWithFloat:cgfloat];
-    CGFloat nonObjectFloat = [ObjectFloat floatValue];
+    NSNumber * ObjectFloat = [NSNumber numberWithFloat:cgfloat]; // число в объект
+    CGFloat nonObjectFloat = [ObjectFloat floatValue]; //обратно в примитив
     
     return nonObjectFloat;
 }
