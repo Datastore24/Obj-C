@@ -10,4 +10,8 @@
 
 @interface Auto : NSObject
 
+@property (strong,nonatomic,readonly) NSString * model;
+- (instancetype)initWithModelName : (NSString *) model;
+
+
 @end

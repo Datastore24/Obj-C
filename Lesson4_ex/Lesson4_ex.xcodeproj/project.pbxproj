@@ -14,6 +14,7 @@
 		ADBFAA301B824B4F00688EFF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADBFAA2F1B824B4F00688EFF /* Images.xcassets */; };
 		ADBFAA331B824B4F00688EFF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADBFAA311B824B4F00688EFF /* LaunchScreen.xib */; };
 		ADBFAA3F1B824B5000688EFF /* Lesson4_exTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBFAA3E1B824B5000688EFF /* Lesson4_exTests.m */; };
+		ADBFAA4A1B824F1100688EFF /* Auto.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBFAA491B824F1100688EFF /* Auto.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		ADBFAA381B824B5000688EFF /* Lesson4_exTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson4_exTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBFAA3D1B824B5000688EFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADBFAA3E1B824B5000688EFF /* Lesson4_exTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lesson4_exTests.m; sourceTree = "<group>"; };
+		ADBFAA481B824F1100688EFF /* Auto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Auto.h; sourceTree = "<group>"; };
+		ADBFAA491B824F1100688EFF /* Auto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Auto.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				ADBFAA261B824B4F00688EFF /* AppDelegate.h */,
 				ADBFAA271B824B4F00688EFF /* AppDelegate.m */,
+				ADBFAA481B824F1100688EFF /* Auto.h */,
+				ADBFAA491B824F1100688EFF /* Auto.m */,
 				ADBFAA291B824B4F00688EFF /* ViewController.h */,
 				ADBFAA2A1B824B4F00688EFF /* ViewController.m */,
 				ADBFAA2C1B824B4F00688EFF /* Main.storyboard */,
@@ -221,6 +226,7 @@
 			files = (
 				ADBFAA2B1B824B4F00688EFF /* ViewController.m in Sources */,
 				ADBFAA281B824B4F00688EFF /* AppDelegate.m in Sources */,
+				ADBFAA4A1B824F1100688EFF /* Auto.m in Sources */,
 				ADBFAA251B824B4F00688EFF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

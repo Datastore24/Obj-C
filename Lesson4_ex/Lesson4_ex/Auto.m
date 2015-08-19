@@ -10,4 +10,19 @@
 
 @implementation Auto
 
+- (instancetype)initWithModelName : (NSString *) model
+{
+    self = [super init];
+    if (self) {
+        _model = model;
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+
+    NSLog(@"Dealloc!");
+}
+
 @end
