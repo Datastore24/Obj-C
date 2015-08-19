@@ -10,6 +10,7 @@
 
 @implementation Users
 
+//Метод установки property Users
 -(void) setUsers:(NSString *) uLogin uPassword: (NSString *) uPassword
            uName: (NSString *) uName uAge: (NSInteger) uAge
            uSize: (NSInteger) uSize uEmail: (NSString *) uEmail{
@@ -20,6 +21,7 @@
     self.uSize = uSize;
     self.uEmail = uEmail;
 }
+
 
 
 

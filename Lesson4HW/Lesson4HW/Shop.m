@@ -10,6 +10,7 @@
 
 @implementation Shop
 
+//Инициализация с данными о магазине
 - (instancetype)init
 {
     self = [super init];
@@ -20,12 +21,14 @@
     return self;
 }
 
+//Ассортимент магазина
 -(NSArray *) shopItems {
     NSArray * itemsArray = [[NSArray alloc] initWithObjects:@"Джинсы",@"Куртка",@"Свитер",@"Майка",@"Футболка", nil];
     return itemsArray;
     
 }
 
+//Цена магазина
 -(NSDictionary *) itemsPrice {
     NSDictionary * itemsPrice = @{@"Джинсы":@"100",
                                   @"Куртка":@"500",
