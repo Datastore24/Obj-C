@@ -120,15 +120,11 @@
     NSDictionary *itemsUsersArray =
         [[NSDictionary alloc] initWithDictionary:[usersArray objectAtIndex:i]];
 
-    //Получение всех используемых ключей
-    NSArray *arrayKey = [itemsUsersArray allKeys];
-
     //Цикл по ключам с выводом в консоль строки
-    for (int k = 0; arrayKey.count > k; k++) {
-      NSLog(@"%@ = %@", [arrayKey objectAtIndex:k],
-            [itemsUsersArray objectForKey:[arrayKey objectAtIndex:k]]); //Вывод строки
-    
-    }
+      for(NSString * key in [itemsUsersArray allKeys]){
+          NSLog(@"%@ = %@", key,
+                [itemsUsersArray objectForKey:key]); //Вывод строки
+      }
       NSLog(@"---------");//разделитель
   }
 }
