@@ -10,11 +10,10 @@
 
 @interface Shop : NSObject
 
-@property (strong, nonatomic, readonly) NSString * sName;
-@property (strong, nonatomic, readonly) NSString * sPhone;
+@property(strong, nonatomic, readonly) NSString *sName;
+@property(strong, nonatomic, readonly) NSString *sPhone;
 
--(NSArray *) shopItems;
--(NSDictionary *) itemsPrice;
-
+- (NSArray *)shopItems;
+- (NSDictionary *)itemsPrice;
 
 @end

@@ -10,15 +10,18 @@
 
 @interface Users : NSObject
 
-@property (strong,nonatomic) NSString * uLogin;
-@property (strong,nonatomic) NSString * uPassword;
-@property (strong,nonatomic) NSString * uName;
-@property (assign,nonatomic) NSInteger uAge;
-@property (assign,nonatomic) NSInteger uSize;
-@property (strong,nonatomic) NSString * uEmail;
+@property(strong, nonatomic) NSString *uLogin;
+@property(strong, nonatomic) NSString *uPassword;
+@property(strong, nonatomic) NSString *uName;
+@property(assign, nonatomic) NSInteger uAge;
+@property(assign, nonatomic) NSInteger uSize;
+@property(strong, nonatomic) NSString *uEmail;
 
--(void) setUsers:(NSString *) uLogin uPassword: (NSString *) uPassword
-           uName: (NSString *) uName uAge: (NSInteger) uAge
-           uSize: (NSInteger) uSize uEmail: (NSString *) uEmail;
+- (void)setUsers:(NSString *)uLogin
+       uPassword:(NSString *)uPassword
+           uName:(NSString *)uName
+            uAge:(NSInteger)uAge
+           uSize:(NSInteger)uSize
+          uEmail:(NSString *)uEmail;
 
 @end

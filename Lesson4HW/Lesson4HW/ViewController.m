@@ -68,10 +68,11 @@
 //Метод для кнопки вход
 - (IBAction)Enter:(id)sender {
 
-  NSLog(@"Вы вошли как: %@ [%@]! \n\n Пароль: %@ \n Вам: %li лет \n Ваш "
-        @"размер: %li \n E-mail:%@",
-        self.users.uName, self.users.uLogin, self.users.uPassword,
-        self.users.uAge, self.users.uSize, self.users.uEmail);
+  NSLog(
+      @"Вы вошли как: %@ [%@]! \n\n Пароль: %@ \n Вам: %li лет \n "
+      @"Ваш " @"размер: %li \n E-mail:%@",
+      self.users.uName, self.users.uLogin, self.users.uPassword,
+      self.users.uAge, self.users.uSize, self.users.uEmail);
   [self.makeOrder setEnabled:YES]; // Активируем кнопку
   [self.enter setEnabled:NO];      // Деактивируем кнопку
 }
@@ -82,20 +83,20 @@
       initWithArray:[self.shop shopItems]]; //Инициализируем массив из property
   NSDictionary *itemsPrice = [[NSDictionary alloc]
       initWithDictionary:[self.shop itemsPrice]]; //Инициализируем коллекцию из
-                                                  //property
+  // property
 
   //Цикл для обработки наименование товара - цена
   for (int i = 0; shopItems.count > i; i++) {
 
     NSString *itemKey = [NSString
         stringWithFormat:@"%@", [shopItems objectAtIndex:i]]; // Дергаем
-                                                              // название товара
+    // название товара
     NSString *items = [NSString
         stringWithFormat:@"%@ %@ руб.", [shopItems objectAtIndex:i],
                          [itemsPrice objectForKey:itemKey]]; //Формирование
                                                              //строки
-                                                             //Наименование -
-                                                             //Цена руб.
+    //Наименование -
+    //Цена руб.
     NSLog(@"%@", items); // Вывод строки
   }
 }
@@ -115,17 +116,17 @@
 
 //Обработка двумерного массива
 - (void)arrayProcessing:(NSMutableArray *)usersArray {
+
   for (int i = 0; usersArray.count > i; i++) {
     //Инциализация внутренней коллекци по индексу i;
     NSDictionary *itemsUsersArray =
         [[NSDictionary alloc] initWithDictionary:[usersArray objectAtIndex:i]];
 
     //Цикл по ключам с выводом в консоль строки
-      for(NSString * key in [itemsUsersArray allKeys]){
-          NSLog(@"%@ = %@", key,
-                [itemsUsersArray objectForKey:key]); //Вывод строки
-      }
-      NSLog(@"---------");//разделитель
+    for (NSString *key in [itemsUsersArray allKeys]) {
+      NSLog(@"%@ = %@", key, [itemsUsersArray objectForKey:key]); //Вывод строки
+    }
+    NSLog(@"---------"); //разделитель
   }
 }
 

@@ -11,31 +11,33 @@
 @implementation Shop
 
 //Инициализация с данными о магазине
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        _sName = @"Магазин одежды и аксессуаров";
-        _sPhone = @"+7 499 7135917";
-    }
-    return self;
+- (instancetype)init {
+  self = [super init];
+  if (self) {
+    _sName = @"Магазин одежды и аксессуаров";
+    _sPhone = @"+7 499 7135917";
+  }
+  return self;
 }
 
 //Ассортимент магазина
--(NSArray *) shopItems {
-    NSArray * itemsArray = [[NSArray alloc] initWithObjects:@"Джинсы",@"Куртка",@"Свитер",@"Майка",@"Футболка", nil];
-    return itemsArray;
-    
+- (NSArray *)shopItems {
+  NSArray *itemsArray = [[NSArray alloc]
+      initWithObjects:@"Джинсы", @"Куртка", @"Свитер",
+                      @"Майка", @"Футболка", nil];
+  return itemsArray;
 }
 
 //Цена магазина
--(NSDictionary *) itemsPrice {
-    NSDictionary * itemsPrice = @{@"Джинсы":@"100",
-                                  @"Куртка":@"500",
-                                  @"Свитер":@"250",
-                                  @"Майка":@"900",
-                                  @"Футболка":@"150"};
-    return itemsPrice;
+- (NSDictionary *)itemsPrice {
+  NSDictionary *itemsPrice = @{
+    @"Джинсы" : @"100",
+    @"Куртка" : @"500",
+    @"Свитер" : @"250",
+    @"Майка" : @"900",
+    @"Футболка" : @"150"
+  };
+  return itemsPrice;
 }
 
 @end
