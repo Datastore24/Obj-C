@@ -14,6 +14,8 @@
 		AD18DF461B845AB50038FDCF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD18DF451B845AB50038FDCF /* Images.xcassets */; };
 		AD18DF491B845AB50038FDCF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD18DF471B845AB50038FDCF /* LaunchScreen.xib */; };
 		AD18DF551B845AB50038FDCF /* Lesson4HWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD18DF541B845AB50038FDCF /* Lesson4HWTests.m */; };
+		AD18DF601B845B260038FDCF /* Users.m in Sources */ = {isa = PBXBuildFile; fileRef = AD18DF5F1B845B260038FDCF /* Users.m */; };
+		AD18DF631B845B350038FDCF /* Shop.m in Sources */ = {isa = PBXBuildFile; fileRef = AD18DF621B845B350038FDCF /* Shop.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		AD18DF4E1B845AB50038FDCF /* Lesson4HWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson4HWTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD18DF531B845AB50038FDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD18DF541B845AB50038FDCF /* Lesson4HWTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lesson4HWTests.m; sourceTree = "<group>"; };
+		AD18DF5E1B845B260038FDCF /* Users.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Users.h; sourceTree = "<group>"; };
+		AD18DF5F1B845B260038FDCF /* Users.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Users.m; sourceTree = "<group>"; };
+		AD18DF611B845B350038FDCF /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shop.h; sourceTree = "<group>"; };
+		AD18DF621B845B350038FDCF /* Shop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shop.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 			children = (
 				AD18DF3C1B845AB50038FDCF /* AppDelegate.h */,
 				AD18DF3D1B845AB50038FDCF /* AppDelegate.m */,
+				AD18DF5E1B845B260038FDCF /* Users.h */,
+				AD18DF5F1B845B260038FDCF /* Users.m */,
+				AD18DF611B845B350038FDCF /* Shop.h */,
+				AD18DF621B845B350038FDCF /* Shop.m */,
 				AD18DF3F1B845AB50038FDCF /* ViewController.h */,
 				AD18DF401B845AB50038FDCF /* ViewController.m */,
 				AD18DF421B845AB50038FDCF /* Main.storyboard */,
@@ -219,6 +229,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD18DF631B845B350038FDCF /* Shop.m in Sources */,
+				AD18DF601B845B260038FDCF /* Users.m in Sources */,
 				AD18DF411B845AB50038FDCF /* ViewController.m in Sources */,
 				AD18DF3E1B845AB50038FDCF /* AppDelegate.m in Sources */,
 				AD18DF3B1B845AB50038FDCF /* main.m in Sources */,
