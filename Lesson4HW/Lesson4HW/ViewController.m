@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Users.h"
 #import "Shop.h"
+#import "ShowUsers.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,7 @@
 
 @property(weak, nonatomic) IBOutlet UIButton *enter;
 
-@property(weak, nonatomic) IBOutlet UIButton *showUsers;
+@property(weak, nonatomic) IBOutlet ShowUsers *showUsers;
 
 @property(strong, nonatomic) Shop *shop;
 @property(strong, nonatomic) Users *users;
@@ -59,18 +60,21 @@
   NSMutableArray *mUsers = [[NSMutableArray alloc] init]; //Изменяемы массив
   [mUsers addObject:userOxyfire]; //Добавление коллекции в массив
   [mUsers addObject:userOlga]; // Добавление коллекции в массив
-  self.usersArray =
+
+  self.showUsers.array =
       mUsers; // Помещаем массив в proparty расширяем область видимости
+
   [self.showUsers addTarget:self
                      action:@selector(showAllUsers)
            forControlEvents:UIControlEventTouchUpInside]; //Действия на кнопка
 }
+
 //Метод для кнопки вход
 - (IBAction)Enter:(id)sender {
 
   NSLog(
-      @"Вы вошли как: %@ [%@]! \n\n Пароль: %@ \n Вам: %li лет \n "
-      @"Ваш " @"размер: %li \n E-mail:%@",
+      @"Вы вошли как: %@ [%@]! \n\n Пароль: %@ \n Вам: %li лет "
+      @"\n " @"Ваш " @"размер: %li \n E-mail:%@",
       self.users.uName, self.users.uLogin, self.users.uPassword,
       self.users.uAge, self.users.uSize, self.users.uEmail);
   [self.makeOrder setEnabled:YES]; // Активируем кнопку
@@ -104,12 +108,8 @@
 //Метод для кнопки вывод всех пользователей
 - (IBAction)showAllUsers {
 
-  //Обработка массива двумерного массива
-  NSMutableArray *usersArray =
-      [[NSMutableArray alloc] initWithArray:self.usersArray];
-
   //Вывоз метода обработки массива
-  [self arrayProcessing:usersArray];
+  [self arrayProcessing:self.showUsers.array];
 
   //
 }
@@ -118,13 +118,10 @@
 - (void)arrayProcessing:(NSMutableArray *)usersArray {
 
   for (int i = 0; usersArray.count > i; i++) {
-    //Инциализация внутренней коллекци по индексу i;
-    NSDictionary *itemsUsersArray =
-        [[NSDictionary alloc] initWithDictionary:[usersArray objectAtIndex:i]];
 
     //Цикл по ключам с выводом в консоль строки
-    for (NSString *key in [itemsUsersArray allKeys]) {
-      NSLog(@"%@ = %@", key, [itemsUsersArray objectForKey:key]); //Вывод строки
+    for (NSString *key in [[usersArray objectAtIndex:i] allKeys]) {
+      NSLog(@"%@ = %@", key, [[usersArray objectAtIndex:i] objectForKey:key]); //Вывод строки
     }
     NSLog(@"---------"); //разделитель
   }

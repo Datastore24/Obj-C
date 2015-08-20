@@ -32,7 +32,7 @@
                                     <action selector="makeOrder:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5fw-06-6d0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6dJ-Gs-ctd">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6dJ-Gs-ctd" customClass="ShowUsers">
                                 <rect key="frame" x="40" y="191" width="250" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Вывести пользователей в консоль">
@@ -45,7 +45,7 @@
                     <connections>
                         <outlet property="enter" destination="eaN-ts-g5l" id="AjV-tA-Ky0"/>
                         <outlet property="makeOrder" destination="qi8-Ep-nTL" id="bYb-UI-IFt"/>
-                        <outlet property="showUsers" destination="6dJ-Gs-ctd" id="WJ2-8o-fnD"/>
+                        <outlet property="showUsers" destination="6dJ-Gs-ctd" id="MKy-sd-Oqr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
