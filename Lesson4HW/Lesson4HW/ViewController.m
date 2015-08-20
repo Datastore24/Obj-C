@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "Users.h"
 #import "Shop.h"
-#import "ShowUsers.h"
+#import "ButtonExtensions.h"
 
 @interface ViewController ()
 
@@ -17,7 +17,7 @@
 
 @property(weak, nonatomic) IBOutlet UIButton *enter;
 
-@property(weak, nonatomic) IBOutlet ShowUsers *showUsers;
+@property(weak, nonatomic) IBOutlet ButtonExtensions *showUsers;
 
 @property(strong, nonatomic) Shop *shop;
 @property(strong, nonatomic) Users *users;
@@ -57,11 +57,12 @@
       initWithObjectsAndKeys:@"olga", @"user", @"321", @"password",
                              @"Ковыршина Ольга", @"name",
                              nil]; //Коллекция 2 пользователя
-  NSMutableArray *mUsers = [[NSMutableArray alloc] init]; //Изменяемы массив
+  NSMutableArray *mUsers = [[NSMutableArray alloc] init]; //Изменяемый массив
+    
   [mUsers addObject:userOxyfire]; //Добавление коллекции в массив
   [mUsers addObject:userOlga]; // Добавление коллекции в массив
 
-  self.showUsers.array =
+  self.showUsers.mArray =
       mUsers; // Помещаем массив в proparty расширяем область видимости
 
   [self.showUsers addTarget:self
@@ -73,8 +74,8 @@
 - (IBAction)Enter:(id)sender {
 
   NSLog(
-      @"Вы вошли как: %@ [%@]! \n\n Пароль: %@ \n Вам: %li лет "
-      @"\n " @"Ваш " @"размер: %li \n E-mail:%@",
+      @"Вы вошли как: %@ [%@]! \n\n Пароль: %@ \n Вам: %li "
+      @"лет " @"\n " @"Ваш " @"размер: %li \n E-mail:%@",
       self.users.uName, self.users.uLogin, self.users.uPassword,
       self.users.uAge, self.users.uSize, self.users.uEmail);
   [self.makeOrder setEnabled:YES]; // Активируем кнопку
@@ -100,7 +101,7 @@
                          [itemsPrice objectForKey:itemKey]]; //Формирование
                                                              //строки
     //Наименование -
-    //Цена руб.
+    //Цена руб.e
     NSLog(@"%@", items); // Вывод строки
   }
 }
@@ -109,7 +110,7 @@
 - (IBAction)showAllUsers {
 
   //Вывоз метода обработки массива
-  [self arrayProcessing:self.showUsers.array];
+  [self arrayProcessing:self.showUsers.mArray];
 
   //
 }
@@ -121,7 +122,8 @@
 
     //Цикл по ключам с выводом в консоль строки
     for (NSString *key in [[usersArray objectAtIndex:i] allKeys]) {
-      NSLog(@"%@ = %@", key, [[usersArray objectAtIndex:i] objectForKey:key]); //Вывод строки
+      NSLog(@"%@ = %@", key,
+            [[usersArray objectAtIndex:i] objectForKey:key]); //Вывод строки
     }
     NSLog(@"---------"); //разделитель
   }

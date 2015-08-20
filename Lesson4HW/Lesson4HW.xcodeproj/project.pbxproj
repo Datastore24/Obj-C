@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AD056D1A1B85238F000907AD /* ShowUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = AD056D191B85238F000907AD /* ShowUsers.m */; };
+		AD056D1D1B85B349000907AD /* ButtonExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AD056D1C1B85B349000907AD /* ButtonExtensions.m */; };
 		AD18DF3B1B845AB50038FDCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD18DF3A1B845AB50038FDCF /* main.m */; };
 		AD18DF3E1B845AB50038FDCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD18DF3D1B845AB50038FDCF /* AppDelegate.m */; };
 		AD18DF411B845AB50038FDCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD18DF401B845AB50038FDCF /* ViewController.m */; };
@@ -30,8 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AD056D181B85238F000907AD /* ShowUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowUsers.h; sourceTree = "<group>"; };
-		AD056D191B85238F000907AD /* ShowUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowUsers.m; sourceTree = "<group>"; };
+		AD056D1B1B85B349000907AD /* ButtonExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonExtensions.h; sourceTree = "<group>"; };
+		AD056D1C1B85B349000907AD /* ButtonExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonExtensions.m; sourceTree = "<group>"; };
 		AD18DF351B845AB50038FDCF /* Lesson4HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lesson4HW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD18DF391B845AB50038FDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD18DF3A1B845AB50038FDCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 				AD18DF621B845B350038FDCF /* Shop.m */,
 				AD18DF3F1B845AB50038FDCF /* ViewController.h */,
 				AD18DF401B845AB50038FDCF /* ViewController.m */,
-				AD056D181B85238F000907AD /* ShowUsers.h */,
-				AD056D191B85238F000907AD /* ShowUsers.m */,
+				AD056D1B1B85B349000907AD /* ButtonExtensions.h */,
+				AD056D1C1B85B349000907AD /* ButtonExtensions.m */,
 				AD18DF421B845AB50038FDCF /* Main.storyboard */,
 				AD18DF451B845AB50038FDCF /* Images.xcassets */,
 				AD18DF471B845AB50038FDCF /* LaunchScreen.xib */,
@@ -237,9 +237,9 @@
 				AD18DF631B845B350038FDCF /* Shop.m in Sources */,
 				AD18DF601B845B260038FDCF /* Users.m in Sources */,
 				AD18DF411B845AB50038FDCF /* ViewController.m in Sources */,
+				AD056D1D1B85B349000907AD /* ButtonExtensions.m in Sources */,
 				AD18DF3E1B845AB50038FDCF /* AppDelegate.m in Sources */,
 				AD18DF3B1B845AB50038FDCF /* main.m in Sources */,
-				AD056D1A1B85238F000907AD /* ShowUsers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

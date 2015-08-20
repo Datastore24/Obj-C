@@ -32,7 +32,7 @@
                                     <action selector="makeOrder:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5fw-06-6d0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6dJ-Gs-ctd" customClass="ShowUsers">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6dJ-Gs-ctd" customClass="ButtonExtensions">
                                 <rect key="frame" x="40" y="191" width="250" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Вывести пользователей в консоль">
