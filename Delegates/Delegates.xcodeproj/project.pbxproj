@@ -14,6 +14,9 @@
 		AD056CF51B84B194000907AD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD056CF41B84B194000907AD /* Images.xcassets */; };
 		AD056CF81B84B194000907AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD056CF61B84B194000907AD /* LaunchScreen.xib */; };
 		AD056D041B84B195000907AD /* DelegatesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD056D031B84B195000907AD /* DelegatesTests.m */; };
+		AD056D0F1B84CF77000907AD /* Patient.m in Sources */ = {isa = PBXBuildFile; fileRef = AD056D0E1B84CF77000907AD /* Patient.m */; };
+		AD056D111B84D093000907AD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD056D101B84D093000907AD /* CoreGraphics.framework */; };
+		AD056D141B84D41D000907AD /* Doctor.m in Sources */ = {isa = PBXBuildFile; fileRef = AD056D131B84D41D000907AD /* Doctor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,11 @@
 		AD056CFD1B84B195000907AD /* DelegatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD056D021B84B195000907AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD056D031B84B195000907AD /* DelegatesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegatesTests.m; sourceTree = "<group>"; };
+		AD056D0D1B84CF77000907AD /* Patient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Patient.h; sourceTree = "<group>"; };
+		AD056D0E1B84CF77000907AD /* Patient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Patient.m; sourceTree = "<group>"; };
+		AD056D101B84D093000907AD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AD056D121B84D41D000907AD /* Doctor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Doctor.h; sourceTree = "<group>"; };
+		AD056D131B84D41D000907AD /* Doctor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Doctor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD056D111B84D093000907AD /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 		AD056CDB1B84B194000907AD = {
 			isa = PBXGroup;
 			children = (
+				AD056D101B84D093000907AD /* CoreGraphics.framework */,
 				AD056CE61B84B194000907AD /* Delegates */,
 				AD056D001B84B195000907AD /* DelegatesTests */,
 				AD056CE51B84B194000907AD /* Products */,
@@ -81,6 +91,10 @@
 		AD056CE61B84B194000907AD /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
+				AD056D0D1B84CF77000907AD /* Patient.h */,
+				AD056D0E1B84CF77000907AD /* Patient.m */,
+				AD056D121B84D41D000907AD /* Doctor.h */,
+				AD056D131B84D41D000907AD /* Doctor.m */,
 				AD056CEB1B84B194000907AD /* AppDelegate.h */,
 				AD056CEC1B84B194000907AD /* AppDelegate.m */,
 				AD056CEE1B84B194000907AD /* ViewController.h */,
@@ -220,8 +234,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD056CF01B84B194000907AD /* ViewController.m in Sources */,
+				AD056D0F1B84CF77000907AD /* Patient.m in Sources */,
 				AD056CED1B84B194000907AD /* AppDelegate.m in Sources */,
 				AD056CEA1B84B194000907AD /* main.m in Sources */,
+				AD056D141B84D41D000907AD /* Doctor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

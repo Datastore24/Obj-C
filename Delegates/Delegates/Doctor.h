@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Patient.h"
 
-@interface Doctor : NSObject
+@protocol patientDelegate;
+
+@interface Doctor : NSObject <PatientDelegate>
 
 @end
