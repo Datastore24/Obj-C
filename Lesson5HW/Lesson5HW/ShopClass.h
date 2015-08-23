@@ -8,6 +8,30 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol ShopClassDelegate; //Объявление протокола
+
 @interface ShopClass : NSObject
+
+@property (weak,nonatomic) id <ShopClassDelegate> delegate;
+@property(strong, nonatomic) NSString *sName;
+@property(strong, nonatomic) NSString *sPhone;
+
+-(NSString *) welcome;
+-(void) getShop;
+-(void) getUsers;
+
+
+
+@end
+
+@protocol ShopClassDelegate <NSObject>
+
+@required
+
+- (void) showShopItems: (ShopClass *) shopclass array: (NSMutableArray *) array;
+- (void) showUsers: (ShopClass *) shopcalss array: (NSMutableArray *) array;
+
+
+
 
 @end
