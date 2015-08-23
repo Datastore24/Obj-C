@@ -14,6 +14,7 @@
 		ADAFC7B11B88C18D00605225 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAFC7B01B88C18D00605225 /* Images.xcassets */; };
 		ADAFC7B41B88C18D00605225 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAFC7B21B88C18D00605225 /* LaunchScreen.xib */; };
 		ADAFC7C01B88C18D00605225 /* Lesson5_exTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAFC7BF1B88C18D00605225 /* Lesson5_exTests.m */; };
+		ADAFC7CE1B88CEAA00605225 /* ProtocolClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAFC7CD1B88CEAA00605225 /* ProtocolClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		ADAFC7B91B88C18D00605225 /* Lesson5_exTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lesson5_exTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAFC7BE1B88C18D00605225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADAFC7BF1B88C18D00605225 /* Lesson5_exTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lesson5_exTests.m; sourceTree = "<group>"; };
+		ADAFC7CC1B88CEAA00605225 /* ProtocolClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolClass.h; sourceTree = "<group>"; };
+		ADAFC7CD1B88CEAA00605225 /* ProtocolClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				ADAFC7A71B88C18D00605225 /* AppDelegate.h */,
 				ADAFC7A81B88C18D00605225 /* AppDelegate.m */,
+				ADAFC7CC1B88CEAA00605225 /* ProtocolClass.h */,
+				ADAFC7CD1B88CEAA00605225 /* ProtocolClass.m */,
 				ADAFC7AA1B88C18D00605225 /* ViewController.h */,
 				ADAFC7AB1B88C18D00605225 /* ViewController.m */,
 				ADAFC7AD1B88C18D00605225 /* Main.storyboard */,
@@ -221,6 +226,7 @@
 			files = (
 				ADAFC7AC1B88C18D00605225 /* ViewController.m in Sources */,
 				ADAFC7A91B88C18D00605225 /* AppDelegate.m in Sources */,
+				ADAFC7CE1B88CEAA00605225 /* ProtocolClass.m in Sources */,
 				ADAFC7A61B88C18D00605225 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
