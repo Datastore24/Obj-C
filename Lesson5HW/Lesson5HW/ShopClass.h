@@ -16,9 +16,9 @@
 @property(strong, nonatomic) NSString *sName;
 @property(strong, nonatomic) NSString *sPhone;
 
--(NSString *) welcome;
--(void) getShop;
--(void) getUsers;
+- (NSArray *)welcome ;
+- (void) getShop;
+- (void) getUsers;
 
 
 

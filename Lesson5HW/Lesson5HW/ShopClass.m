@@ -11,15 +11,18 @@
 @implementation ShopClass
 
 //Инициализация с данными о магазине
-- (NSString *)welcome {
+- (NSArray *)welcome {
   self.sName = @"Магазин Одежды";
   self.sPhone = @"+7 499 713 59 17";
 
-  NSString *welcomeString = [NSString
-      stringWithFormat:
-          @"Добро пожаловать в %@! Наш телефон:%@",
-          self.sName, self.sPhone];
-  return welcomeString;
+  NSString * welcomeString = [NSString
+      stringWithFormat:@"Добро пожаловать в %@!", self.sName];
+  NSString * phoneString =
+      [NSString stringWithFormat:@"Наш телефон:%@", self.sPhone];
+  NSArray *welcomePhoneArray =
+      [[NSArray alloc] initWithObjects:welcomeString, phoneString, nil];
+
+  return welcomePhoneArray;
 }
 
 - (void)getShop {

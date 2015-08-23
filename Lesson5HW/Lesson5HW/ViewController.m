@@ -12,6 +12,7 @@
 @interface ViewController () <ShopClassDelegate,UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *welcomeText;
+@property (weak, nonatomic) IBOutlet UILabel *phoneNumber;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong,nonatomic) NSArray * arrayData;
 @property (weak, nonatomic) IBOutlet UIButton *userButton;
@@ -27,7 +28,12 @@
     self.tableView.tableFooterView = [[UIView alloc] init];
     ShopClass * protocol = [ShopClass new];
     protocol.delegate = self;
-    self.welcomeText.text = [protocol welcome];
+    NSArray * welcomePhoneArray = [[NSArray alloc] initWithArray:[protocol welcome]];
+  
+    NSString * welcomeText = [NSString stringWithFormat:@"%@",[welcomePhoneArray objectAtIndex:0]];
+    NSString * phoneText = [NSString stringWithFormat:@"%@",[welcomePhoneArray objectAtIndex:1]];
+    self.welcomeText.text = welcomeText;
+    self.phoneNumber.text = phoneText;
     
     
     // Do any additional setup after loading the view, typically from a nib.

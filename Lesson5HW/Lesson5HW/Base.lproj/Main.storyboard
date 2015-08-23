@@ -61,8 +61,8 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="6Db-31-eZ9"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C8j-JZ-9Bc">
-                                <rect key="frame" x="5" y="66" width="315" height="74"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="C8j-JZ-9Bc">
+                                <rect key="frame" x="5" y="66" width="315" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.032538937390000001" blue="0.090099688580000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -88,11 +88,19 @@
                                     <action selector="clickUsersButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KbJ-9Q-Or0"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Lin-cO-3zZ">
+                                <rect key="frame" x="16" y="99" width="298" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.032538937390000001" blue="0.090099688580000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="kdu-Zn-mZu"/>
                     <connections>
+                        <outlet property="phoneNumber" destination="Lin-cO-3zZ" id="ePo-Cz-w0t"/>
                         <outlet property="shopButton" destination="E5n-2U-vVP" id="LcC-3c-ghc"/>
                         <outlet property="tableView" destination="4Ko-W6-qRW" id="EJH-S6-aFN"/>
                         <outlet property="userButton" destination="Iau-dU-UN0" id="su7-s3-zrK"/>
