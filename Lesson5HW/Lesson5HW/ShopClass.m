@@ -10,14 +10,14 @@
 
 @implementation ShopClass
 
-//Инициализация с данными о магазине
+//Данные о магазине в виде массива
 - (NSArray *)welcome {
   self.sName = @"Магазин Одежды";
   self.sPhone = @"+7 499 713 59 17";
 
-  NSString * welcomeString = [NSString
+  NSString *welcomeString = [NSString
       stringWithFormat:@"Добро пожаловать в %@!", self.sName];
-  NSString * phoneString =
+  NSString *phoneString =
       [NSString stringWithFormat:@"Наш телефон:%@", self.sPhone];
   NSArray *welcomePhoneArray =
       [[NSArray alloc] initWithObjects:welcomeString, phoneString, nil];
@@ -25,6 +25,7 @@
   return welcomePhoneArray;
 }
 
+//Не скрытый метод получения массива товаров и цены
 - (void)getShop {
 
   NSMutableArray *itemsPriceArray = [[NSMutableArray alloc] init];
@@ -42,10 +43,11 @@
 
     [itemsPriceArray addObject:dict];
   }
-  
+
   [self hideShowShopItems:itemsPriceArray];
 }
 
+//Инкапсулированный метод делегата
 - (void)hideShowShopItems:(NSMutableArray *)array {
 
   if ([self.delegate respondsToSelector:@selector(showShopItems:array:)]) {
@@ -54,46 +56,47 @@
   }
 }
 
+//Не скрытый метод получения массива пользователей
 - (void)getUsers {
 
   NSMutableArray *mUsers = [[NSMutableArray alloc] init]; //Изменяемый массив
-
+  //Пользователи
   NSArray *uLogin = [[NSArray alloc]
-      initWithObjects:@"oxyfire", @"kovolga", @"Dasha", @"Viktor",
-                      nil]; //Коллекция  1 пользователя
-  NSArray *uPassword =
-      [[NSArray alloc] initWithObjects:@"123", @"0909", @"4943439", @"pass",
-                                       nil]; //Коллекция  1 пользователя
+      initWithObjects:@"oxyfire", @"kovolga", @"Dasha", @"Viktor", nil];
 
+  //Пароли
+  NSArray *uPassword = [[NSArray alloc]
+      initWithObjects:@"123", @"0909", @"4943439", @"pass", nil];
+  //Ф.И.О
   NSArray *uName = [[NSArray alloc]
       initWithObjects:@"Ковыршин Кирилл",
                       @"Ковыршина Ольга", @"Дарья",
-                      @"Доганов Виктор",
-                      nil]; //Коллекция  1 пользователя
-    NSArray *uEmail = [[NSArray alloc]
-                      initWithObjects:@"co@datastore24.ru",
-                      @"olga@vmecte.ru", @"dasha@mail.ru",
-                      @"viktor84@bk.ru",
-                      nil];
-    NSArray *uAvatar = [[NSArray alloc]
-                        initWithObjects:@"Kirill.jpg",
-                        @"Olga.jpg",@"dasha.jpg",
-                        @"anonym.png",
-                        nil];
+                      @"Доганов Виктор", nil];
 
+  //Почта
+  NSArray *uEmail = [[NSArray alloc]
+      initWithObjects:@"co@datastore24.ru", @"olga@vmecte.ru", @"dasha@mail.ru",
+                      @"viktor84@bk.ru", nil];
+  //Изображения
+  NSArray *uAvatar =
+      [[NSArray alloc] initWithObjects:@"Kirill.jpg", @"Olga.jpg", @"dasha.jpg",
+                                       @"anonym.png", nil];
+
+  //Создание единого массива данных
   for (int i = 0; i < uLogin.count; i++) {
     NSDictionary *dict = [[NSDictionary alloc]
         initWithObjectsAndKeys:[uLogin objectAtIndex:i], @"uLogin",
                                [uPassword objectAtIndex:i], @"uPassword",
                                [uName objectAtIndex:i], @"uName",
-                          [uEmail objectAtIndex:i], @"uEmail",
-                          [uAvatar objectAtIndex:i], @"uAvatar",nil];
+                               [uEmail objectAtIndex:i], @"uEmail",
+                               [uAvatar objectAtIndex:i], @"uAvatar", nil];
     [mUsers addObject:dict];
   }
-    NSLog(@"%@",mUsers);
+
   [self hideUsersMethod:mUsers];
 }
 
+//Инкапсулированный метод делегата
 - (void)hideUsersMethod:(NSMutableArray *)array {
 
   if ([self.delegate respondsToSelector:@selector(showUsers:array:)]) {
