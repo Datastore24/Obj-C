@@ -92,7 +92,7 @@
                                 <rect key="frame" x="16" y="99" width="298" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.032538937390000001" blue="0.090099688580000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.027517107038322997" green="0.081078256832040729" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
