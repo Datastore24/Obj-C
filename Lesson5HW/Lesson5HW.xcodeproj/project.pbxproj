@@ -15,6 +15,10 @@
 		ADAFC7EC1B8A3F7900605225 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAFC7EA1B8A3F7900605225 /* LaunchScreen.xib */; };
 		ADAFC7F81B8A3F7A00605225 /* Lesson5HWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAFC7F71B8A3F7A00605225 /* Lesson5HWTests.m */; };
 		ADAFC8031B8A406000605225 /* ShopClass.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAFC8021B8A406000605225 /* ShopClass.m */; };
+		ADAFC80A1B8B17CA00605225 /* dasha.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADAFC8091B8B17CA00605225 /* dasha.jpg */; };
+		ADAFC80C1B8B17FE00605225 /* anonym.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAFC80B1B8B17FE00605225 /* anonym.png */; };
+		ADAFC80E1B8B184F00605225 /* Kirill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADAFC80D1B8B184F00605225 /* Kirill.jpg */; };
+		ADAFC8101B8B185800605225 /* Olga.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADAFC80F1B8B185800605225 /* Olga.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,10 @@
 		ADAFC7F71B8A3F7A00605225 /* Lesson5HWTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Lesson5HWTests.m; sourceTree = "<group>"; };
 		ADAFC8011B8A406000605225 /* ShopClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopClass.h; sourceTree = "<group>"; };
 		ADAFC8021B8A406000605225 /* ShopClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopClass.m; sourceTree = "<group>"; };
+		ADAFC8091B8B17CA00605225 /* dasha.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dasha.jpg; sourceTree = "<group>"; };
+		ADAFC80B1B8B17FE00605225 /* anonym.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anonym.png; sourceTree = "<group>"; };
+		ADAFC80D1B8B184F00605225 /* Kirill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kirill.jpg; sourceTree = "<group>"; };
+		ADAFC80F1B8B185800605225 /* Olga.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Olga.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,7 @@
 		ADAFC7DA1B8A3F7900605225 /* Lesson5HW */ = {
 			isa = PBXGroup;
 			children = (
+				ADAFC8041B8B176100605225 /* Images */,
 				ADAFC7DF1B8A3F7900605225 /* AppDelegate.h */,
 				ADAFC7E01B8A3F7900605225 /* AppDelegate.m */,
 				ADAFC8011B8A406000605225 /* ShopClass.h */,
@@ -122,6 +131,17 @@
 				ADAFC7F61B8A3F7A00605225 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADAFC8041B8B176100605225 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ADAFC80B1B8B17FE00605225 /* anonym.png */,
+				ADAFC80D1B8B184F00605225 /* Kirill.jpg */,
+				ADAFC80F1B8B185800605225 /* Olga.jpg */,
+				ADAFC8091B8B17CA00605225 /* dasha.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +224,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADAFC80C1B8B17FE00605225 /* anonym.png in Resources */,
+				ADAFC80A1B8B17CA00605225 /* dasha.jpg in Resources */,
+				ADAFC80E1B8B184F00605225 /* Kirill.jpg in Resources */,
 				ADAFC7E71B8A3F7900605225 /* Main.storyboard in Resources */,
+				ADAFC8101B8B185800605225 /* Olga.jpg in Resources */,
 				ADAFC7EC1B8A3F7900605225 /* LaunchScreen.xib in Resources */,
 				ADAFC7E91B8A3F7900605225 /* Images.xcassets in Resources */,
 			);
@@ -422,6 +446,7 @@
 				ADAFC7FD1B8A3F7A00605225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADAFC7FE1B8A3F7A00605225 /* Build configuration list for PBXNativeTarget "Lesson5HWTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +455,7 @@
 				ADAFC8001B8A3F7A00605225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

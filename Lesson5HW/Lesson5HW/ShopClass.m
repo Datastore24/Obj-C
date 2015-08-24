@@ -42,7 +42,7 @@
 
     [itemsPriceArray addObject:dict];
   }
-  NSLog(@"%@", itemsPriceArray);
+  
   [self hideShowShopItems:itemsPriceArray];
 }
 
@@ -70,15 +70,27 @@
                       @"Ковыршина Ольга", @"Дарья",
                       @"Доганов Виктор",
                       nil]; //Коллекция  1 пользователя
+    NSArray *uEmail = [[NSArray alloc]
+                      initWithObjects:@"co@datastore24.ru",
+                      @"olga@vmecte.ru", @"dasha@mail.ru",
+                      @"viktor84@bk.ru",
+                      nil];
+    NSArray *uAvatar = [[NSArray alloc]
+                        initWithObjects:@"Kirill.jpg",
+                        @"Olga.jpg",@"dasha.jpg",
+                        @"anonym.png",
+                        nil];
 
   for (int i = 0; i < uLogin.count; i++) {
     NSDictionary *dict = [[NSDictionary alloc]
         initWithObjectsAndKeys:[uLogin objectAtIndex:i], @"uLogin",
                                [uPassword objectAtIndex:i], @"uPassword",
-                               [uName objectAtIndex:i], @"uName", nil];
+                               [uName objectAtIndex:i], @"uName",
+                          [uEmail objectAtIndex:i], @"uEmail",
+                          [uAvatar objectAtIndex:i], @"uAvatar",nil];
     [mUsers addObject:dict];
   }
-
+    NSLog(@"%@",mUsers);
   [self hideUsersMethod:mUsers];
 }
 

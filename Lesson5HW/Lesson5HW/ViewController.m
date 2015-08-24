@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *userButton;
 @property (weak, nonatomic) IBOutlet UIButton *shopButton;
 
+
+
 @end
 
 @implementation ViewController
@@ -47,6 +49,7 @@
     ShopClass * protocol = [ShopClass new];
     protocol.delegate = self;
     [protocol performSelector:@selector(getShop) withObject:nil afterDelay:1.0];
+    
     
 }
 - (IBAction)clickUsersButton:(id)sender {
@@ -86,29 +89,65 @@
     
 }
 
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary * dict = [self.arrayData objectAtIndex:indexPath.row];
+    
+    if (dict.count > 2) {
+      return 130.f;
+    }else{
+      return 50.f;
+    }
+    
+    
+    
+}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    static NSString * identifier = @"Cell";
-    
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
     NSDictionary * dict = [self.arrayData objectAtIndex:indexPath.row];
     
     if (dict.count > 2) {
-        NSString * nameAndLogin = [NSString stringWithFormat:@"%@ [%@]",
-                                      [dict objectForKey:@"uName"],[dict objectForKey:@"uLogin"]];
-                                      
-        cell.textLabel.text = nameAndLogin;
-        cell.detailTextLabel.text = [dict objectForKey:@"uPassword"];
-      
+        static NSString * identifier = @"User";
+        UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+       
+        
+        UILabel * uName;
+        UILabel * uPassowrd;
+        UILabel * uLogin;
+        UILabel * uEmail;
+        UIImageView * avatar;
+        
+        uName = (UILabel *) [cell.contentView viewWithTag:1001];
+        uName.text = [dict objectForKey:@"uName"];
+        
+        uLogin = (UILabel *) [cell.contentView viewWithTag:1002];
+        uLogin.text = [dict objectForKey:@"uLogin"];
+        
+        uPassowrd = (UILabel *) [cell.contentView viewWithTag:1003];
+        uPassowrd.text = [dict objectForKey:@"uPassword"];
+        
+        
+        uEmail = (UILabel *) [cell.contentView viewWithTag:1004];
+        uEmail.text = [dict objectForKey:@"uEmail"];
+        
+        avatar = (UIImageView *) [cell.contentView viewWithTag:1005];
+        avatar.image = [UIImage imageNamed:[dict objectForKey:@"uAvatar"]];
+        
+
+        return cell;
     }else{
+        static NSString * identifier = @"Cell";
+        
+        UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+        
         cell.textLabel.text = [dict objectForKey:@"items"];
         cell.detailTextLabel.text = [dict objectForKey:@"price"];
+        return cell;
+        
     }
     
     
-    return cell;
+    
     
 }
 
