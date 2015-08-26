@@ -38,7 +38,16 @@
              name:NOTIFICATION_WHEN_USERS_IS_LOADED
            object:nil];
 
+  //Фоновое изображение для TableView --------------------------------------//
+  UIImageView *tempImageView =
+      [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"fonTable.jpg"]];
+  [tempImageView setFrame:self.tableView.frame];
+
+  self.tableView.backgroundView = tempImageView;
   self.tableView.tableFooterView = [[UIView alloc] init];
+
+  //------------------------------------------------------------------------//
+
   ShopClass *protocol = [ShopClass new]; // Объект класса ShopClass
   NSArray *welcomePhoneArray = [[NSArray alloc]
       initWithArray:[protocol welcome]]; //Массив с приветствием
@@ -94,7 +103,7 @@
   [self.arrayData removeAllObjects];
 
   self.arrayData = [[NSMutableArray alloc] initWithArray:array];
-    
+
   [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0]
                 withRowAnimation:UITableViewRowAnimationLeft];
 }
@@ -114,7 +123,7 @@
   NSDictionary *dict = [self.arrayData objectAtIndex:indexPath.row];
 
   if ([dict objectForKey:@"uLogin"]) {
-    return 130.f;
+    return 155.f;
   } else {
     return 50.f;
   }
@@ -133,12 +142,16 @@
                                         forIndexPath:indexPath];
 
     cell.uNameLabel.text = [dict objectForKey:@"uName"];
+    cell.uNameLabel.textColor = [UIColor whiteColor]; //Цвет текста
 
     cell.uLoginLabel.text = [dict objectForKey:@"uLogin"];
+    cell.uLoginLabel.textColor = [UIColor whiteColor];//Цвет текста
 
     cell.uPasswordLabel.text = [dict objectForKey:@"uPassword"];
+    cell.uPasswordLabel.textColor = [UIColor whiteColor];//Цвет текста
 
     cell.uEmailLabel.text = [dict objectForKey:@"uEmail"];
+    cell.uEmailLabel.textColor = [UIColor whiteColor];//Цвет текста
 
     cell.uImage.image = [UIImage imageNamed:[dict objectForKey:@"uAvatar"]];
 
@@ -151,7 +164,10 @@
                                         forIndexPath:indexPath];
 
     cell.textLabel.text = [dict objectForKey:@"items"];
+    cell.textLabel.textColor = [UIColor whiteColor];//Цвет текста
+      
     cell.detailTextLabel.text = [dict objectForKey:@"price"];
+    cell.detailTextLabel.textColor = [UIColor whiteColor];//Цвет текста
     return cell;
   }
 }

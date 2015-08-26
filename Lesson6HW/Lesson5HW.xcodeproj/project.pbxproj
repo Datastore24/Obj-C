@@ -19,6 +19,7 @@
 		ADAFC80C1B8B17FE00605225 /* anonym.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAFC80B1B8B17FE00605225 /* anonym.png */; };
 		ADAFC80E1B8B184F00605225 /* Kirill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADAFC80D1B8B184F00605225 /* Kirill.jpg */; };
 		ADAFC8101B8B185800605225 /* Olga.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADAFC80F1B8B185800605225 /* Olga.jpg */; };
+		ADB71A661B8E5E5C00DE250D /* fonTable.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADB71A651B8E5E5C00DE250D /* fonTable.jpg */; };
 		ADDE4D921B8D02CF00275E85 /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDE4D911B8D02CF00275E85 /* CustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		ADAFC80B1B8B17FE00605225 /* anonym.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anonym.png; sourceTree = "<group>"; };
 		ADAFC80D1B8B184F00605225 /* Kirill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kirill.jpg; sourceTree = "<group>"; };
 		ADAFC80F1B8B185800605225 /* Olga.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Olga.jpg; sourceTree = "<group>"; };
+		ADB71A651B8E5E5C00DE250D /* fonTable.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fonTable.jpg; sourceTree = "<group>"; };
 		ADDE4D8A1B8CD07B00275E85 /* AppPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppPrefixHeader.pch; path = Lesson5HW/AppPrefixHeader.pch; sourceTree = "<group>"; };
 		ADDE4D8C1B8CD11300275E85 /* AppConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
 		ADDE4D901B8D02CF00275E85 /* CustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewCell.h; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			children = (
 				ADAFC80B1B8B17FE00605225 /* anonym.png */,
 				ADAFC80D1B8B184F00605225 /* Kirill.jpg */,
+				ADB71A651B8E5E5C00DE250D /* fonTable.jpg */,
 				ADAFC80F1B8B185800605225 /* Olga.jpg */,
 				ADAFC8091B8B17CA00605225 /* dasha.jpg */,
 			);
@@ -239,6 +242,7 @@
 				ADAFC7E71B8A3F7900605225 /* Main.storyboard in Resources */,
 				ADAFC8101B8B185800605225 /* Olga.jpg in Resources */,
 				ADAFC7EC1B8A3F7900605225 /* LaunchScreen.xib in Resources */,
+				ADB71A661B8E5E5C00DE250D /* fonTable.jpg in Resources */,
 				ADAFC7E91B8A3F7900605225 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
