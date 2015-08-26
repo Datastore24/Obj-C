@@ -70,18 +70,20 @@
 
 //Действие для кнопки Магазин
 - (IBAction)clickShopButton:(id)sender {
+
   ShopClass *protocol = [ShopClass new]; // создание объекта
   [protocol performSelector:@selector(getShop)
                  withObject:nil
-                 afterDelay:1.0]; // Вызываем метод с задержкой
+                 afterDelay:0.5]; // Вызываем метод с задержкой
 }
 
 //Действие для кнопки Пользователи
 - (IBAction)clickUsersButton:(id)sender {
+
   ShopClass *protocol = [ShopClass new]; // создание объекта
   [protocol performSelector:@selector(getUsers)
                  withObject:nil
-                 afterDelay:1.0]; // Вызываем метод с задержкой
+                 afterDelay:0.5]; // Вызываем метод с задержкой
 }
 
 #pragma mark - ShopClassDelegate
@@ -92,6 +94,7 @@
   [self.arrayData removeAllObjects];
 
   self.arrayData = [[NSMutableArray alloc] initWithArray:array];
+    
   [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0]
                 withRowAnimation:UITableViewRowAnimationLeft];
 }
@@ -142,6 +145,7 @@
     return cell;
 
   } else {
+
     CustomTableViewCell *cell = (CustomTableViewCell *)
         [tableView dequeueReusableCellWithIdentifier:identifierItems
                                         forIndexPath:indexPath];

@@ -10,7 +10,6 @@
 
 @interface CustomTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *uNameLabel;
-
 @property (weak, nonatomic) IBOutlet UILabel *uLoginLabel;
 @property (weak, nonatomic) IBOutlet UILabel *uPasswordLabel;
 @property (weak, nonatomic) IBOutlet UILabel *uEmailLabel;

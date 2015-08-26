@@ -169,7 +169,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Iau-dU-UN0">
-                                        <rect key="frame" x="-286" y="-439" width="1080" height="959"/>
+                                        <rect key="frame" x="188" y="26" width="134" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Пользователи">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
