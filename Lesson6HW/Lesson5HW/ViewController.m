@@ -167,7 +167,7 @@
     cell.textLabel.textColor = [UIColor whiteColor];//Цвет текста
       
     cell.detailTextLabel.text = [dict objectForKey:@"price"];
-    cell.detailTextLabel.textColor = [UIColor whiteColor];//Цвет текста
+    cell.detailTextLabel.textColor = [UIColor whiteColor];
     return cell;
   }
 }
