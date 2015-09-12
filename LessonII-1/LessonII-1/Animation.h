@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Animation : NSObject
+
++ (void) animationView: (UIView*) view withColor: (UIColor*) color;
++ (void) animateTextInLabel: (UILabel *) label withText: (NSString *) text;
 
 @end

@@ -14,6 +14,7 @@
 		ADA81F9D1BA345BE00B60716 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADA81F9C1BA345BE00B60716 /* Images.xcassets */; };
 		ADA81FA01BA345BE00B60716 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADA81F9E1BA345BE00B60716 /* LaunchScreen.xib */; };
 		ADA81FAC1BA345BE00B60716 /* LessonII_1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADA81FAB1BA345BE00B60716 /* LessonII_1Tests.m */; };
+		ADE434491BA3498C00BC1093 /* Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE434481BA3498C00BC1093 /* Animation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		ADA81FA51BA345BE00B60716 /* LessonII-1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LessonII-1Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADA81FAA1BA345BE00B60716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADA81FAB1BA345BE00B60716 /* LessonII_1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LessonII_1Tests.m; sourceTree = "<group>"; };
+		ADE434471BA3498C00BC1093 /* Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animation.h; sourceTree = "<group>"; };
+		ADE434481BA3498C00BC1093 /* Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		ADA81F8E1BA345BE00B60716 /* LessonII-1 */ = {
 			isa = PBXGroup;
 			children = (
+				ADE434471BA3498C00BC1093 /* Animation.h */,
+				ADE434481BA3498C00BC1093 /* Animation.m */,
 				ADA81F931BA345BE00B60716 /* AppDelegate.h */,
 				ADA81F941BA345BE00B60716 /* AppDelegate.m */,
 				ADA81F961BA345BE00B60716 /* ViewController.h */,
@@ -221,6 +226,7 @@
 			files = (
 				ADA81F981BA345BE00B60716 /* ViewController.m in Sources */,
 				ADA81F951BA345BE00B60716 /* AppDelegate.m in Sources */,
+				ADE434491BA3498C00BC1093 /* Animation.m in Sources */,
 				ADA81F921BA345BE00B60716 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +422,7 @@
 				ADA81FB11BA345BF00B60716 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADA81FB21BA345BF00B60716 /* Build configuration list for PBXNativeTarget "LessonII-1Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				ADA81FB41BA345BF00B60716 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
