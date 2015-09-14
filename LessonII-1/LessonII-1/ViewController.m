@@ -18,6 +18,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *label1;
 @property (weak, nonatomic) IBOutlet UILabel *label2;
+@property (weak, nonatomic) IBOutlet UIView *someView;
 
 @end
 
@@ -42,6 +43,8 @@
     
     self.label1.text = @"Да";
     self.label2.text = @"Нет";
+    
+    self.someView.alpha = 0;
 }
 
 - (void) check1 {
@@ -54,8 +57,19 @@
         [Animation animateTextInLabel:self.label1 withText:@"Да"];
         [Animation animateTextInLabel:self.label2 withText:@"Нет"];
         
+//        CGRect newFrame = self.someView.frame;
+//        newFrame.origin.x = newFrame.origin.x + 50;
+//        newFrame.size.width = newFrame.size.width + 50;
+//        newFrame.size.height = newFrame.size.height + 50;
+//        [Animation animationFrameView:self.someView withFrame:newFrame];
         
-      
+        [Animation animateTransformView:self.someView withScale:1.8 move_X:0.0 move_Y:0.0 alpha:1 delay:0.0];
+        [Animation animateTransformView:self.someView withScale:1.0 move_X:0.0 move_Y:0.0 alpha:0 delay:0.2];
+        
+        [Animation animateImageView:self.imageView image:[UIImage imageNamed:@"Geta.jpg"] alpa:0];
+        
+        
+        
     }
     
 }
@@ -69,6 +83,16 @@
         
         [Animation animateTextInLabel:self.label1 withText:@"Нет"];
         [Animation animateTextInLabel:self.label2 withText:@"Да"];
+        
+//        CGRect newFrame = self.someView.frame;
+//        newFrame.origin.x = newFrame.origin.x - 50;
+//        newFrame.size.width = newFrame.size.width - 50;
+//        newFrame.size.height = newFrame.size.height - 50;
+//        [Animation animationFrameView:self.someView withFrame:newFrame];
+        
+        [Animation animateTransformView:self.someView withScale:1.8 move_X:-30.0 move_Y:-30.0 alpha:1 delay:0.0];
+        [Animation animateTransformView:self.someView withScale:1.0 move_X:-30.0 move_Y:-30.0 alpha:1 delay:0.2];
+        [Animation animateImageView:self.imageView image:[UIImage imageNamed:@"Geta.jpg"] alpa:1];
         
 
     }
