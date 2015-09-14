@@ -14,6 +14,9 @@
 		ADE434641BA45B6600BC1093 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE434631BA45B6600BC1093 /* Images.xcassets */; };
 		ADE434671BA45B6600BC1093 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADE434651BA45B6600BC1093 /* LaunchScreen.xib */; };
 		ADE434731BA45B6600BC1093 /* LessonII_1HWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE434721BA45B6600BC1093 /* LessonII_1HWTests.m */; };
+		ADE434821BA6B3CD00BC1093 /* Animations.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE434811BA6B3CD00BC1093 /* Animations.m */; };
+		ADE434841BA6B48600BC1093 /* Geta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADE434831BA6B48600BC1093 /* Geta.jpg */; };
+		ADE434861BA6B53F00BC1093 /* tax-roll.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE434851BA6B53F00BC1093 /* tax-roll.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		ADE4346C1BA45B6600BC1093 /* LessonII-1HWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LessonII-1HWTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE434711BA45B6600BC1093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADE434721BA45B6600BC1093 /* LessonII_1HWTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LessonII_1HWTests.m; sourceTree = "<group>"; };
+		ADE434801BA6B3CD00BC1093 /* Animations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animations.h; sourceTree = "<group>"; };
+		ADE434811BA6B3CD00BC1093 /* Animations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animations.m; sourceTree = "<group>"; };
+		ADE434831BA6B48600BC1093 /* Geta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Geta.jpg; sourceTree = "<group>"; };
+		ADE434851BA6B53F00BC1093 /* tax-roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tax-roll.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,10 @@
 		ADE434551BA45B6600BC1093 /* LessonII-1HW */ = {
 			isa = PBXGroup;
 			children = (
+				ADE434831BA6B48600BC1093 /* Geta.jpg */,
+				ADE434851BA6B53F00BC1093 /* tax-roll.png */,
+				ADE434801BA6B3CD00BC1093 /* Animations.h */,
+				ADE434811BA6B3CD00BC1093 /* Animations.m */,
 				ADE4345A1BA45B6600BC1093 /* AppDelegate.h */,
 				ADE4345B1BA45B6600BC1093 /* AppDelegate.m */,
 				ADE4345D1BA45B6600BC1093 /* ViewController.h */,
@@ -199,8 +210,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE434841BA6B48600BC1093 /* Geta.jpg in Resources */,
 				ADE434621BA45B6600BC1093 /* Main.storyboard in Resources */,
 				ADE434671BA45B6600BC1093 /* LaunchScreen.xib in Resources */,
+				ADE434861BA6B53F00BC1093 /* tax-roll.png in Resources */,
 				ADE434641BA45B6600BC1093 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +234,7 @@
 			files = (
 				ADE4345F1BA45B6600BC1093 /* ViewController.m in Sources */,
 				ADE4345C1BA45B6600BC1093 /* AppDelegate.m in Sources */,
+				ADE434821BA6B3CD00BC1093 /* Animations.m in Sources */,
 				ADE434591BA45B6600BC1093 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
