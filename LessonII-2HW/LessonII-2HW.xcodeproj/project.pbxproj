@@ -14,6 +14,9 @@
 		ADAD99551BA8B11B0002DF2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAD99541BA8B11B0002DF2A /* Images.xcassets */; };
 		ADAD99581BA8B11B0002DF2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAD99561BA8B11B0002DF2A /* LaunchScreen.xib */; };
 		ADAD99641BA8B11B0002DF2A /* LessonII_2HWTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAD99631BA8B11B0002DF2A /* LessonII_2HWTests.m */; };
+		ADAD99701BA8B87F0002DF2A /* UIColor+HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAD996F1BA8B87F0002DF2A /* UIColor+HexColors.m */; };
+		ADAD99721BA8C3820002DF2A /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADAD99711BA8C3820002DF2A /* background.jpg */; };
+		ADAD99761BA8D04C0002DF2A /* desk.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAD99751BA8D04C0002DF2A /* desk.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		ADAD995D1BA8B11B0002DF2A /* LessonII-2HWTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LessonII-2HWTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAD99621BA8B11B0002DF2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADAD99631BA8B11B0002DF2A /* LessonII_2HWTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LessonII_2HWTests.m; sourceTree = "<group>"; };
+		ADAD996E1BA8B87F0002DF2A /* UIColor+HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexColors.h"; sourceTree = "<group>"; };
+		ADAD996F1BA8B87F0002DF2A /* UIColor+HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexColors.m"; sourceTree = "<group>"; };
+		ADAD99711BA8C3820002DF2A /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		ADAD99751BA8D04C0002DF2A /* desk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = desk.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +88,9 @@
 		ADAD99461BA8B11B0002DF2A /* LessonII-2HW */ = {
 			isa = PBXGroup;
 			children = (
+				ADAD99711BA8C3820002DF2A /* background.jpg */,
+				ADAD99751BA8D04C0002DF2A /* desk.png */,
+				ADAD996D1BA8B8700002DF2A /* Categories */,
 				ADAD994B1BA8B11B0002DF2A /* AppDelegate.h */,
 				ADAD994C1BA8B11B0002DF2A /* AppDelegate.m */,
 				ADAD994E1BA8B11B0002DF2A /* ViewController.h */,
@@ -117,6 +127,15 @@
 				ADAD99621BA8B11B0002DF2A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ADAD996D1BA8B8700002DF2A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				ADAD996E1BA8B87F0002DF2A /* UIColor+HexColors.h */,
+				ADAD996F1BA8B87F0002DF2A /* UIColor+HexColors.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADAD99531BA8B11B0002DF2A /* Main.storyboard in Resources */,
+				ADAD99761BA8D04C0002DF2A /* desk.png in Resources */,
+				ADAD99721BA8C3820002DF2A /* background.jpg in Resources */,
 				ADAD99581BA8B11B0002DF2A /* LaunchScreen.xib in Resources */,
 				ADAD99551BA8B11B0002DF2A /* Images.xcassets in Resources */,
 			);
@@ -220,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADAD99501BA8B11B0002DF2A /* ViewController.m in Sources */,
+				ADAD99701BA8B87F0002DF2A /* UIColor+HexColors.m in Sources */,
 				ADAD994D1BA8B11B0002DF2A /* AppDelegate.m in Sources */,
 				ADAD994A1BA8B11B0002DF2A /* main.m in Sources */,
 			);
@@ -350,6 +372,7 @@
 				INFOPLIST_FILE = "LessonII-2HW/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -360,6 +383,7 @@
 				INFOPLIST_FILE = "LessonII-2HW/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
