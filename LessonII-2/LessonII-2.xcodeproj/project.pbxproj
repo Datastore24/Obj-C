@@ -14,6 +14,8 @@
 		ADAD991D1BA88C2C0002DF2A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADAD991C1BA88C2C0002DF2A /* Images.xcassets */; };
 		ADAD99201BA88C2C0002DF2A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADAD991E1BA88C2C0002DF2A /* LaunchScreen.xib */; };
 		ADAD992C1BA88C2C0002DF2A /* LessonII_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAD992B1BA88C2C0002DF2A /* LessonII_2Tests.m */; };
+		ADAD99361BA88C430002DF2A /* Geta.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ADAD99351BA88C430002DF2A /* Geta.jpg */; };
+		ADAD993A1BA89ECC0002DF2A /* tax-roll.png in Resources */ = {isa = PBXBuildFile; fileRef = ADAD99391BA89ECC0002DF2A /* tax-roll.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		ADAD99251BA88C2C0002DF2A /* LessonII-2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LessonII-2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAD992A1BA88C2C0002DF2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADAD992B1BA88C2C0002DF2A /* LessonII_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LessonII_2Tests.m; sourceTree = "<group>"; };
+		ADAD99351BA88C430002DF2A /* Geta.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Geta.jpg; sourceTree = "<group>"; };
+		ADAD99391BA89ECC0002DF2A /* tax-roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tax-roll.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 		ADAD990E1BA88C2C0002DF2A /* LessonII-2 */ = {
 			isa = PBXGroup;
 			children = (
+				ADAD99391BA89ECC0002DF2A /* tax-roll.png */,
+				ADAD99351BA88C430002DF2A /* Geta.jpg */,
 				ADAD99131BA88C2C0002DF2A /* AppDelegate.h */,
 				ADAD99141BA88C2C0002DF2A /* AppDelegate.m */,
 				ADAD99161BA88C2C0002DF2A /* ViewController.h */,
@@ -199,8 +205,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADAD99361BA88C430002DF2A /* Geta.jpg in Resources */,
 				ADAD991B1BA88C2C0002DF2A /* Main.storyboard in Resources */,
 				ADAD99201BA88C2C0002DF2A /* LaunchScreen.xib in Resources */,
+				ADAD993A1BA89ECC0002DF2A /* tax-roll.png in Resources */,
 				ADAD991D1BA88C2C0002DF2A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
