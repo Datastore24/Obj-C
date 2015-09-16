@@ -72,7 +72,7 @@
   [self.view addSubview:playMusicButton];
 
   UILabel *labelMusic =
-      [[UILabel alloc] initWithFrame:CGRectMake(800, 720, 400, 35)];
+      [[UILabel alloc] initWithFrame:CGRectMake(800, 710, 400, 50)];
   labelMusic.text = @"Музыка";
   labelMusic.textColor = [UIColor colorWithHexString:@"ffd800"];
   labelMusic.font = [UIFont fontWithName:@"Snell Roundhand" size:42];
