@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD9FDA4C1BA986EC0041319A /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9FDA4B1BA986EC0041319A /* SoundManager.m */; };
+		AD9FDA4F1BA98B080041319A /* classic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AD9FDA4E1BA98B080041319A /* classic.mp3 */; };
+		AD9FDA521BA9E38B0041319A /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9FDA501BA9E38B0041319A /* pause.png */; };
+		AD9FDA531BA9E38B0041319A /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9FDA511BA9E38B0041319A /* play.png */; };
+		AD9FDA601BA9EF440041319A /* AFSoundItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9FDA561BA9EF440041319A /* AFSoundItem.m */; };
+		AD9FDA611BA9EF440041319A /* AFSoundPlayback.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9FDA591BA9EF440041319A /* AFSoundPlayback.m */; };
+		AD9FDA621BA9EF440041319A /* AFSoundQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9FDA5B1BA9EF440041319A /* AFSoundQueue.m */; };
+		AD9FDA631BA9EF440041319A /* AFSoundRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9FDA5D1BA9EF440041319A /* AFSoundRecord.m */; };
+		AD9FDA641BA9EF440041319A /* NSTimer+AFSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD9FDA5F1BA9EF440041319A /* NSTimer+AFSoundManager.m */; };
 		ADAD994A1BA8B11B0002DF2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAD99491BA8B11B0002DF2A /* main.m */; };
 		ADAD994D1BA8B11B0002DF2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAD994C1BA8B11B0002DF2A /* AppDelegate.m */; };
 		ADAD99501BA8B11B0002DF2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADAD994F1BA8B11B0002DF2A /* ViewController.m */; };
@@ -42,6 +51,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AD9FDA4A1BA986EC0041319A /* SoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundManager.h; sourceTree = "<group>"; };
+		AD9FDA4B1BA986EC0041319A /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
+		AD9FDA4E1BA98B080041319A /* classic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = classic.mp3; sourceTree = "<group>"; };
+		AD9FDA501BA9E38B0041319A /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		AD9FDA511BA9E38B0041319A /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		AD9FDA551BA9EF440041319A /* AFSoundItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundItem.h; sourceTree = "<group>"; };
+		AD9FDA561BA9EF440041319A /* AFSoundItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundItem.m; sourceTree = "<group>"; };
+		AD9FDA571BA9EF440041319A /* AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundManager.h; sourceTree = "<group>"; };
+		AD9FDA581BA9EF440041319A /* AFSoundPlayback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundPlayback.h; sourceTree = "<group>"; };
+		AD9FDA591BA9EF440041319A /* AFSoundPlayback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundPlayback.m; sourceTree = "<group>"; };
+		AD9FDA5A1BA9EF440041319A /* AFSoundQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundQueue.h; sourceTree = "<group>"; };
+		AD9FDA5B1BA9EF440041319A /* AFSoundQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundQueue.m; sourceTree = "<group>"; };
+		AD9FDA5C1BA9EF440041319A /* AFSoundRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSoundRecord.h; sourceTree = "<group>"; };
+		AD9FDA5D1BA9EF440041319A /* AFSoundRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSoundRecord.m; sourceTree = "<group>"; };
+		AD9FDA5E1BA9EF440041319A /* NSTimer+AFSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+AFSoundManager.h"; sourceTree = "<group>"; };
+		AD9FDA5F1BA9EF440041319A /* NSTimer+AFSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+AFSoundManager.m"; sourceTree = "<group>"; };
 		ADAD99441BA8B11B0002DF2A /* LessonII-2HW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LessonII-2HW.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADAD99481BA8B11B0002DF2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADAD99491BA8B11B0002DF2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +116,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD9FDA541BA9EF390041319A /* AFSoundManager */ = {
+			isa = PBXGroup;
+			children = (
+				AD9FDA551BA9EF440041319A /* AFSoundItem.h */,
+				AD9FDA561BA9EF440041319A /* AFSoundItem.m */,
+				AD9FDA571BA9EF440041319A /* AFSoundManager.h */,
+				AD9FDA581BA9EF440041319A /* AFSoundPlayback.h */,
+				AD9FDA591BA9EF440041319A /* AFSoundPlayback.m */,
+				AD9FDA5A1BA9EF440041319A /* AFSoundQueue.h */,
+				AD9FDA5B1BA9EF440041319A /* AFSoundQueue.m */,
+				AD9FDA5C1BA9EF440041319A /* AFSoundRecord.h */,
+				AD9FDA5D1BA9EF440041319A /* AFSoundRecord.m */,
+				AD9FDA5E1BA9EF440041319A /* NSTimer+AFSoundManager.h */,
+				AD9FDA5F1BA9EF440041319A /* NSTimer+AFSoundManager.m */,
+			);
+			name = AFSoundManager;
+			sourceTree = "<group>";
+		};
 		ADAD993B1BA8B11B0002DF2A = {
 			isa = PBXGroup;
 			children = (
@@ -112,14 +155,17 @@
 		ADAD99461BA8B11B0002DF2A /* LessonII-2HW */ = {
 			isa = PBXGroup;
 			children = (
+				AD9FDA541BA9EF390041319A /* AFSoundManager */,
+				ADAD996D1BA8B8700002DF2A /* Categories */,
 				ADAD998F1BA940390002DF2A /* Chess */,
 				ADAD99711BA8C3820002DF2A /* background.jpg */,
 				ADAD99751BA8D04C0002DF2A /* desk.png */,
-				ADAD996D1BA8B8700002DF2A /* Categories */,
 				ADAD994B1BA8B11B0002DF2A /* AppDelegate.h */,
 				ADAD994C1BA8B11B0002DF2A /* AppDelegate.m */,
 				ADAD994E1BA8B11B0002DF2A /* ViewController.h */,
 				ADAD994F1BA8B11B0002DF2A /* ViewController.m */,
+				AD9FDA4A1BA986EC0041319A /* SoundManager.h */,
+				AD9FDA4B1BA986EC0041319A /* SoundManager.m */,
 				ADAD99511BA8B11B0002DF2A /* Main.storyboard */,
 				ADAD99541BA8B11B0002DF2A /* Images.xcassets */,
 				ADAD99561BA8B11B0002DF2A /* LaunchScreen.xib */,
@@ -166,6 +212,9 @@
 		ADAD998F1BA940390002DF2A /* Chess */ = {
 			isa = PBXGroup;
 			children = (
+				AD9FDA4E1BA98B080041319A /* classic.mp3 */,
+				AD9FDA501BA9E38B0041319A /* pause.png */,
+				AD9FDA511BA9E38B0041319A /* play.png */,
 				ADAD99771BA940330002DF2A /* elephant_b.png */,
 				ADAD99781BA940330002DF2A /* elephant_w.png */,
 				ADAD99791BA940330002DF2A /* horse_b.png */,
@@ -263,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADAD99851BA940330002DF2A /* horse_b.png in Resources */,
+				AD9FDA531BA9E38B0041319A /* play.png in Resources */,
 				ADAD998E1BA940330002DF2A /* rook_w.png in Resources */,
 				ADAD99841BA940330002DF2A /* elephant_w.png in Resources */,
 				ADAD99531BA8B11B0002DF2A /* Main.storyboard in Resources */,
@@ -275,8 +325,10 @@
 				ADAD998D1BA940330002DF2A /* rook_b.png in Resources */,
 				ADAD998B1BA940330002DF2A /* qeen_b.png in Resources */,
 				ADAD998C1BA940330002DF2A /* qeen_w.png in Resources */,
+				AD9FDA521BA9E38B0041319A /* pause.png in Resources */,
 				ADAD99581BA8B11B0002DF2A /* LaunchScreen.xib in Resources */,
 				ADAD99551BA8B11B0002DF2A /* Images.xcassets in Resources */,
+				AD9FDA4F1BA98B080041319A /* classic.mp3 in Resources */,
 				ADAD99861BA940330002DF2A /* horse_w.png in Resources */,
 				ADAD99831BA940330002DF2A /* elephant_b.png in Resources */,
 			);
@@ -298,8 +350,14 @@
 			files = (
 				ADAD99501BA8B11B0002DF2A /* ViewController.m in Sources */,
 				ADAD99701BA8B87F0002DF2A /* UIColor+HexColors.m in Sources */,
+				AD9FDA611BA9EF440041319A /* AFSoundPlayback.m in Sources */,
+				AD9FDA4C1BA986EC0041319A /* SoundManager.m in Sources */,
 				ADAD994D1BA8B11B0002DF2A /* AppDelegate.m in Sources */,
 				ADAD994A1BA8B11B0002DF2A /* main.m in Sources */,
+				AD9FDA621BA9EF440041319A /* AFSoundQueue.m in Sources */,
+				AD9FDA641BA9EF440041319A /* NSTimer+AFSoundManager.m in Sources */,
+				AD9FDA601BA9EF440041319A /* AFSoundItem.m in Sources */,
+				AD9FDA631BA9EF440041319A /* AFSoundRecord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +554,7 @@
 				ADAD99691BA8B11B0002DF2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ADAD996A1BA8B11B0002DF2A /* Build configuration list for PBXNativeTarget "LessonII-2HWTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +563,7 @@
 				ADAD996C1BA8B11B0002DF2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

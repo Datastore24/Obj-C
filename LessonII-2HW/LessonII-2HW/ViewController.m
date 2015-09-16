@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIColor+HexColors.h"
+#import "AFSoundManager.h"
 
 @interface ViewController ()
 
@@ -15,6 +16,13 @@
 @property(strong, nonatomic) NSMutableDictionary *imagesMArray;
 @property(strong, nonatomic) UIView *anotherView;
 @property(assign, nonatomic) CGPoint dif;
+@property(assign, nonatomic) UIButton *musicButton;
+
+//Для плеера
+@property (nonatomic, strong) AFSoundPlayback *playback;
+@property (nonatomic, strong) AFSoundQueue *queue;
+@property (nonatomic, strong) NSMutableArray *items;
+//
 
 @end
 
@@ -44,11 +52,68 @@
   [self createAChessboard];
   [self addFigureImageToArray];
   [self addFigureOnTheBoard];
+
+  //Проигрывание музыки
+     AFSoundItem *item1 = [[AFSoundItem alloc] initWithLocalResource:@"classic.mp3" atPath:nil];
+     self.items = [NSMutableArray arrayWithObjects:item1, nil];
+    self.queue = [[AFSoundQueue alloc] initWithItems:self.items];
+    [self.queue playCurrentItem];
+    
+
+  UIButton *playMusicButton =
+      [[UIButton alloc] initWithFrame:CGRectMake(760, 725, 32, 32)];
+  playMusicButton.backgroundColor =
+      [UIColor colorWithPatternImage:[UIImage imageNamed:@"pause.png"]];
+
+  [playMusicButton addTarget:self
+                      action:@selector(pauseMusic)
+            forControlEvents:UIControlEventTouchUpInside];
+  self.musicButton = playMusicButton;
+  [self.view addSubview:playMusicButton];
+
+  UILabel *labelMusic =
+      [[UILabel alloc] initWithFrame:CGRectMake(800, 720, 400, 35)];
+  labelMusic.text = @"Музыка";
+  labelMusic.textColor = [UIColor colorWithHexString:@"ffd800"];
+  labelMusic.font = [UIFont fontWithName:@"Snell Roundhand" size:42];
+  labelMusic.shadowColor = [UIColor whiteColor];
+
+  [self.view addSubview:labelMusic];
+    
+  //
 }
 
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
+}
+
+//Метод плеера
+
+-(void)playMusic{
+    [self.queue playCurrentItem];
+        [UIView
+            animateWithDuration:0.5
+                     animations:^{
+                       self.musicButton.backgroundColor = [UIColor
+                           colorWithPatternImage:[UIImage imageNamed:@"pause.png"]];
+                       [self.musicButton addTarget:self
+                                            action:@selector(pauseMusic)
+                                  forControlEvents:UIControlEventTouchUpInside];
+                     }];
+}
+
+-(void)pauseMusic{
+    [self.queue pause];
+    [UIView
+             animateWithDuration:0.5
+                      animations:^{
+                        self.musicButton.backgroundColor = [UIColor
+                            colorWithPatternImage:[UIImage imageNamed:@"play.png"]];
+                        [self.musicButton addTarget:self
+                                             action:@selector(playMusic)
+                                   forControlEvents:UIControlEventTouchUpInside];
+                      }];
 }
 
 - (void)createAChessboard {
