@@ -17,7 +17,38 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //[self testMethod];
+    
+    
+    void (^testBlock) (void);
+    
+    testBlock = ^{
+        NSLog(@"test Block");
+    };
+    
+    testBlock();
+    
+    void (^testBlockWithParams)(NSString *, NSInteger) = ^ (NSString * string, NSInteger intValue) {
+        NSLog(@"string %@, int %li",string,intValue);
+    };
+    
+    testBlockWithParams(@"TEST", 111);
+    
+    NSString * (^testBlockWithReturnValueAndParams)(NSString *, NSInteger) = ^(NSString * string, NSInteger intValue){
+        
+        
+        return [NSString stringWithFormat:@"string %@, int %li",string,intValue];
+    };
+    
+    NSLog(@"%@",testBlockWithReturnValueAndParams(@"TEST2",1111));
+          
     return YES;
+}
+          
+
+-(void) testMethod {
+    NSLog(@"test method");
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
